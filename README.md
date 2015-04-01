@@ -87,3 +87,12 @@ $ chsh -s /usr/local/bin/zsh
 2. enable file system shiled and web shiled
 ```
 
+* Tweak dock
+
+```text
+1. open system preferences
+2. open dock
+3. check automaticaly hide and show the dock
+4. position on screen to left
+```
+
