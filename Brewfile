@@ -12,6 +12,7 @@ cask 'virtualbox'
 cask 'vlc'
 cask 'java7'
 cask 'remote-desktop-connection'
+cask 'slack'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
