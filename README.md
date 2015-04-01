@@ -75,7 +75,7 @@ $ chsh -s /usr/local/bin/zsh
 4. add japanese
 # tweak japanese input method
 5. open karabiner
-6. Control+O to KANA/EISUU(toggle)
+6. Control+Backslash to KANA/EISUU(toggle)
 ```
 
 * Use firefox sync
