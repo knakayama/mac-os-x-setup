@@ -96,3 +96,9 @@ $ chsh -s /usr/local/bin/zsh
 4. position on screen to left
 ```
 
+* Tweak date
+
+```text
+1. change date format to 24-hour style
+```
+
