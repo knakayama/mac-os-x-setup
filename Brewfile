@@ -47,6 +47,7 @@ brew 'peco'
 brew 'tmux', args: ['HEAD']
 brew 'w3m'
 brew 'zsh'
+brew 'zsh-completions'
 brew 'git'
 brew 'direnv'
 brew 'rbenv'
