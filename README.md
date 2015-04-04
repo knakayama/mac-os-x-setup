@@ -1,7 +1,7 @@
 Mac OS X Setup
 ==============
 
-* Buy [Mac OS X](http://www.apple.com/jp/mac/) with English keyboard
+* Buy [Mac OS X](http://www.apple.com/jp/mac/) with US keyboard
 
 * Tweak caps-lock key to performe ctl key
 
