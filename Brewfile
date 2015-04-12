@@ -11,7 +11,7 @@ cask 'skype'
 cask 'virtualbox'
 cask 'vagrant'
 cask 'vlc'
-cask 'java7'
+cask 'java'
 cask 'remote-desktop-connection'
 cask 'slack'
 
