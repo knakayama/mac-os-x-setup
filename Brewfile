@@ -39,7 +39,7 @@ brew 'fontconfig'
 brew 'glib'
 brew 'libxml2'
 brew 'pcre'
-brew 'nmap'
+#brew 'nmap'
 brew 'openssl'
 brew 'tree'
 brew 'hub', args: ['HEAD']
