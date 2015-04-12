@@ -38,8 +38,10 @@ $ ln -s path/to/git path/to/target
 
 ```bash
 $ ghq get git@github.com:knakayama/dotfiles.git
-$ cd ~/.ghq/github/knakayama/dotfiles/bin
-$ ./symlink.rb -c
+$ cd ~/.ghq/github.com/knakayama/dotfiles
+$ git submodule init
+$ git submodule update
+$ ./bin/symlink.rb -c
 ```
 
 * Install [Homebrew brewdler](https://github.com/Homebrew/homebrew-brewdler)
