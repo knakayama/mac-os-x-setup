@@ -3,6 +3,8 @@ Mac OS X Setup
 
 * Buy [Mac OS X](http://www.apple.com/jp/mac/) with US keyboard
 
+* Update system
+
 * Tweak caps-lock key to performe ctl key
 
 * Install Xcode
