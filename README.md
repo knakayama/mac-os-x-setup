@@ -97,7 +97,6 @@ $ chsh -s /usr/local/bin/zsh
 1. open system preferences
 2. open dock
 3. check automaticaly hide and show the dock
-4. position on screen to left
 ```
 
 * Tweak date
