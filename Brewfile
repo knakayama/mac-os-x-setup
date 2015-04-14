@@ -14,6 +14,7 @@ cask 'vlc'
 cask 'java'
 cask 'remote-desktop-connection'
 cask 'slack'
+cask 'kindle'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
