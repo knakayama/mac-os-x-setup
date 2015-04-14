@@ -15,6 +15,7 @@ cask 'java'
 cask 'remote-desktop-connection'
 cask 'slack'
 cask 'kindle'
+cask 'xquartz'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
@@ -59,5 +60,10 @@ brew 'nkf'
 brew 'go'
 brew 'autoconf'
 brew 'automake'
+brew 'pkg-config'
 brew 'reattach-to-user-namespace'
+
+# sanemat/ricty
+tap 'sanemat/font'
+brew 'ricty'
 
