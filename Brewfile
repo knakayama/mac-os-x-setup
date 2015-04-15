@@ -62,6 +62,7 @@ brew 'autoconf'
 brew 'automake'
 brew 'pkg-config'
 brew 'reattach-to-user-namespace'
+brew 'wget'
 
 # sanemat/ricty
 tap 'sanemat/font'
