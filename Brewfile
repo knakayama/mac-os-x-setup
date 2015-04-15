@@ -16,6 +16,7 @@ cask 'remote-desktop-connection'
 cask 'slack'
 cask 'kindle'
 cask 'xquartz'
+cask 'alfred'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
