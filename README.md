@@ -71,7 +71,7 @@ $ chsh -s /usr/local/bin/zsh
 ```bash
 $ cp -f /usr/local/Cellar/ricty/<version>/share/fonts/Ricty*.ttf ~/Library/Fonts/
 $ fc-cache -f
-1. iTerm -> Preferences -> Profiles -> Text -> change `Regular Font` and `Non-ASCII Font` to Ricty 14pt
+$ sh ./bin/iterm2.sh -r
 ```
 
 * Setup japanese
