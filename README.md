@@ -74,13 +74,18 @@ $ fc-cache -f
 $ sh ./bin/iterm2.sh -r
 ```
 
-* Setup japanese
+* Setup karabiner
 
-```text
+```bash
+$ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Library/Application\ Support/Karabiner/private.xml
 # add SandS
 1. open karabiner
 2. SandS v2
+```
+
 # add japanese input method
+
+```text
 1. open System Preferences
 2. open Keyboard
 3. open Input Recource
