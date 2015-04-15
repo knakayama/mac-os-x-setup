@@ -99,14 +99,6 @@ $ fc-cache -f
 2. enable file system shiled and web shiled
 ```
 
-* Tweak dock
-
-```text
-1. open system preferences
-2. open dock
-3. check automaticaly hide and show the dock
-```
-
 * Tweak date
 
 ```text
