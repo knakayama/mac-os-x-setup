@@ -81,6 +81,9 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 # add SandS
 1. open karabiner
 2. SandS v2
+# change key repeat
+1. 400ms initial repeat
+2. 20ms repeat wait
 ```
 
 # add japanese input method
