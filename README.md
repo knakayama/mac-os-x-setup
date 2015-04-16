@@ -121,3 +121,11 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 1. Add firefox and iterm2
 ```
 
+* Tweak Display
+
+```text
+1. Open System Preferences
+2. Open Display
+3. Turn display off after 15m
+```
+
