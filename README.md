@@ -110,3 +110,11 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 1. change date format to 24-hour style
 ```
 
+* Add startup app
+
+```text
+1. Open System Preferences
+1. Open User & Groups
+1. Add firefox and iterm2
+```
+
