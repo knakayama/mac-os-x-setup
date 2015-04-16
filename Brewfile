@@ -17,6 +17,7 @@ cask 'slack'
 cask 'kindle'
 cask 'xquartz'
 cask 'alfred'
+cask 'nmap'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
@@ -42,7 +43,6 @@ brew 'fontconfig'
 brew 'glib'
 brew 'libxml2'
 brew 'pcre'
-#brew 'nmap'
 brew 'openssl'
 brew 'tree'
 brew 'hub', args: ['HEAD']
