@@ -43,4 +43,17 @@
     </autogen>
   </item>
 
+  <!-- https://github.com/tekezo/Karabiner/blob/master/src/core/server/Resources/include/checkbox/languages/japanese.xml -->
+  <item>
+    <name>Control+J to KANA/EISUU (toggle)</name>
+    <appendix>(Except in Virtual Machine, RDC)</appendix>
+    <identifier>remap.jis_controlJ2kanaeisuu</identifier>
+    <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+      KeyCode::VK_JIS_TOGGLE_EISUU_KANA
+    </autogen>
+  </item>
 </root>
+
