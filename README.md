@@ -95,7 +95,7 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 4. add japanese
 # tweak japanese input method
 5. open karabiner
-6. Control+Backslash to KANA/EISUU(toggle)
+6. Control+J to KANA/EISUU(toggle)
 ```
 
 * Use firefox sync
