@@ -86,7 +86,7 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 2. 20ms repeat wait
 ```
 
-# add japanese input method
+* add japanese input method
 
 ```text
 1. open System Preferences
