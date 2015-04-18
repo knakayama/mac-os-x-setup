@@ -88,7 +88,7 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 1. Swap Semicolon and Colon
 ```
 
-# add japanese input method
+* add japanese input method
 
 ```text
 1. open System Preferences
