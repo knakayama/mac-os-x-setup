@@ -84,6 +84,8 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 # change key repeat
 1. 400ms initial repeat
 2. 20ms repeat wait
+# Swap Semicolon and Colon
+1. Swap Semicolon and Colon
 ```
 
 # add japanese input method
