@@ -65,6 +65,7 @@ brew 'pkg-config'
 brew 'reattach-to-user-namespace'
 brew 'wget'
 brew 'sha2'
+brew 'cmake'
 
 # sanemat/ricty
 tap 'sanemat/font'
