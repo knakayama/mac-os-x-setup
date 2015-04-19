@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>local.compresstmuxlog</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/knakayama/.ghq/github.com/knakayama/mac-os-x-setup/bin/compress-tmux-log.sh</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+        <!--
+        <key>StartInterval</key>
+        <integer>300</integer>
+        <key>StandardOutPath</key>
+        <string>/Users/knakayama/.tmuxlog/compress-tmux-log.log</string>
+        <key>StandardErrorPath</key>
+        <string>/Users/knakayama/.tmuxlog/compress-tmux-log.log</string>
+        -->
+    </dict>
+</plist>
