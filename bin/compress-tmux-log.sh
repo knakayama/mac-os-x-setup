@@ -3,7 +3,7 @@
 LOG_DIR="${HOME}/.tmuxlog"
 LOG_FILE="${LOG_DIR}/compress-tmux-log.log"
 
-[[ -d "$LOG_DIR" ]] || exit 0
+[[ -d "$LOG_DIR" ]] || mkdir "$LOG_DIR"
 
 echo "[START] $(date '+%Y/%d/%m %H:%M:%S')" >> "$LOG_FILE"
 

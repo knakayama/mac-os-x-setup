@@ -138,7 +138,5 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 sudo cp -ipv $HOME/.ghq/github.com/knakayama/mac-os-x-setup/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
 sudo chown root ~/Library/LaunchAgents/local.compresstmuxlog.plist
 sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
-mkdir ~/.tmuxlog
-touch ~/.tmuxlog/compress-tmux-log.log
 ```
 
