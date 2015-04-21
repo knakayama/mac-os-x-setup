@@ -6,7 +6,7 @@
         <string>local.compresstmuxlog</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/Users/knakayama/.ghq/github.com/knakayama/mac-os-x-setup/bin/compress-tmux-log.sh</string>
+            <string>/Users/knakayama/.ghq/github.com/knakayama/mac-os-x-setup/bin/compress-tmux-log.rb</string>
         </array>
         <key>RunAtLoad</key>
         <true/>
