@@ -18,6 +18,7 @@ cask 'kindle'
 cask 'xquartz'
 cask 'alfred'
 cask 'nmap'
+cask 'shiftit'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
