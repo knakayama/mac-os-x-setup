@@ -71,7 +71,7 @@ $ chsh -s /usr/local/bin/zsh
 ```bash
 $ cp -f /usr/local/Cellar/ricty/<version>/share/fonts/Ricty*.ttf ~/Library/Fonts/
 $ fc-cache -f
-$ sh ./bin/iterm2.sh -r
+$ ./bin/iterm2-conf-util.rb --restore
 ```
 
 * Setup karabiner
