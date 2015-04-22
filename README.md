@@ -41,7 +41,7 @@ $ ghq get git@github.com:knakayama/dotfiles.git
 $ cd ~/.ghq/github.com/knakayama/dotfiles
 $ git submodule init
 $ git submodule update
-$ ./bin/symlink.rb -c
+$ rake symlink -t
 ```
 
 * Install [Homebrew brewdler](https://github.com/Homebrew/homebrew-brewdler)
