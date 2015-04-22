@@ -23,7 +23,7 @@ print_date "START"
 Find.find(LOG_DIR) do |fpath|
   next unless FileTest.file?(fpath)
   next unless /\d{2}\.log$/ =~ fpath
-  next unless system("/usr/sbin/lsof #{fpath} >/dev/null 2>&1")
+  next if system("/usr/sbin/lsof #{fpath} >/dev/null 2>&1")
 
   Zlib::GzipWriter.open("#{fpath}.gz") do |f_name|
     f_name.puts(open(fpath).read)
