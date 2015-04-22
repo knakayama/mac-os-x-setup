@@ -132,6 +132,12 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 4. Max Brightness
 ```
 
+* Tweak Dock
+
+```text
+1. check automaticaly hide and show the dock
+```
+
 * Compress tmux log
 
 ```bash
