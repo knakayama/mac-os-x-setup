@@ -5,6 +5,10 @@ Mac OS X Setup
 
 * Update system
 
+```bash
+sudo softwareupdate --install --recommended
+```
+
 * Tweak caps-lock key to performe ctl key
 
 * Install Xcode
