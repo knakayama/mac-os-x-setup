@@ -86,6 +86,9 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 2. 20ms repeat wait
 # Swap Semicolon and Colon
 1. Swap Semicolon and Colon
+# enable mouse key
+1. Mouse keys scroll direction
+2. Use S key to enable scroll
 ```
 
 * add japanese input method
