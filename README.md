@@ -43,8 +43,7 @@ $ ln -s path/to/git path/to/target
 ```bash
 $ ghq get git@github.com:knakayama/dotfiles.git
 $ cd ~/.ghq/github.com/knakayama/dotfiles
-$ git submodule init
-$ git submodule update
+$ git submodule update --init
 $ rake symlink -t
 ```
 
