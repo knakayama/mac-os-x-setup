@@ -93,6 +93,8 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 # enable mouse key
 1. Mouse keys scroll direction
 2. Use S key to enable scroll
+# enable vi mode
+1. Simple VI Mode v2
 ```
 
 * add japanese input method
