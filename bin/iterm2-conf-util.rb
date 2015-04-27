@@ -5,7 +5,7 @@
 require 'optparse'
 
 PLIST_PATH = "#{ENV['HOME']}/Library/Preferences/com.googlecode.iterm2.plist"
-REPO_PATH  = "./com.googlecode.iterm2.plist"
+REPO_PATH  = "./assets/com.googlecode.iterm2.plist"
 
 puts "#{PLIST_PATH} not found." unless File.exist?(PLIST_PATH)
 puts "#{REPO_PATH} not found."  unless File.exist?(REPO_PATH)
