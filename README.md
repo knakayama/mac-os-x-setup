@@ -80,7 +80,7 @@ $ ./bin/iterm2-conf-util.rb --restore
 * Setup karabiner
 
 ```bash
-$ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Library/Application\ Support/Karabiner/private.xml
+$ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml $HOME/Library/Application\ Support/Karabiner/private.xml
 # add SandS
 1. open karabiner
 2. SandS v2
@@ -149,7 +149,7 @@ $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/private.xml $HOME/Librar
 * Compress tmux log
 
 ```bash
-sudo cp -ipv $HOME/.ghq/github.com/knakayama/mac-os-x-setup/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
+sudo cp -ipv $HOME/.ghq/github.com/knakayama/assets/mac-os-x-setup/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
 sudo chown root ~/Library/LaunchAgents/local.compresstmuxlog.plist
 sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 ```
