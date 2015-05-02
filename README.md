@@ -81,19 +81,7 @@ $ ./bin/iterm2-conf-util.rb --restore
 
 ```bash
 $ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml $HOME/Library/Application\ Support/Karabiner/private.xml
-# add SandS
-1. open karabiner
-2. SandS v2
-# change key repeat
-1. 400ms initial repeat
-2. 20ms repeat wait
-# Swap Semicolon and Colon
-1. Swap Semicolon and Colon
-# enable mouse key
-1. Mouse keys scroll direction
-2. Use S key to enable scroll
-# enable vi mode
-1. Simple VI Mode v2
+$ ./bin/karabiner.sh
 ```
 
 * add japanese input method
