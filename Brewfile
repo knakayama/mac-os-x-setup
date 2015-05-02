@@ -68,7 +68,6 @@ brew 'wget'
 brew 'sha2'
 brew 'cmake'
 brew 'xz'
-brew 'lua'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'rsense'
 
