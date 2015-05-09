@@ -70,6 +70,7 @@ brew 'cmake'
 brew 'xz'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'rsense'
+brew 'pyenv'
 
 # sanemat/ricty
 tap 'sanemat/font'
