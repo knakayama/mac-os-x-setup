@@ -10,6 +10,8 @@ $cli set parameter.mouse_key_scroll_natural_direction 1
 /bin/echo -n .
 $cli set remap.jis_controlJ2kanaeisuu 1
 /bin/echo -n .
+$cli set option.emacsmode_controlLeftbracket 1
+/bin/echo -n .
 $cli set repeat.wait 23
 /bin/echo -n .
 $cli set remap.simple_vi_mode 1
@@ -18,8 +20,8 @@ $cli set private.vim.ime_new 1
 /bin/echo -n .
 $cli set remap.sands2 1
 /bin/echo -n .
-$cli set remap.swapcolons 1
-/bin/echo -n .
 $cli set remap.mouse_keys_mode_2 1
+/bin/echo -n .
+$cli set remap.swapcolons 1
 /bin/echo -n .
 /bin/echo
