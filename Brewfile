@@ -19,6 +19,7 @@ cask 'xquartz'
 cask 'alfred'
 cask 'nmap'
 cask 'shiftit'
+cask 'dropbox'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
