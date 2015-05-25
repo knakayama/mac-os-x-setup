@@ -57,9 +57,9 @@ if grep -qF '/usr/local/bin/zsh' "/etc/shells"; then
   echo "Adding /usr/local/bin/zsh to /etc/shells..."
   sudo echo "/usr/local/bin/zsh" >> "/etc/shells"
 fi
-if ! echo "$SHELLS" | grep -qF '/usr/local/bin/zsh'; then
+if ! dscl . -read /User/$USER UserShell | grep -qF '/usr/local/bin/zsh'; then
   echo "Changing $SHELLS to /usr/local/bin/zsh..."
-  chsh -s "/usr/local/bin/zsh"
+  sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 fi
 
 if ! ls "${HOME}/Library/Fonts" | grep -qF 'Ricty'; then

@@ -64,9 +64,7 @@ $ brew brewdle
 * Change login shell
 
 ```bash
-# add /usr/local/bin/zsh
-$ sudo vi /etc/shells
-$ chsh -s /usr/local/bin/zsh
+$ sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 ```
 
 * Use [Ricty font](https://github.com/yascentur/Ricty)
