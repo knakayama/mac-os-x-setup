@@ -20,6 +20,7 @@ cask 'alfred'
 cask 'nmap'
 cask 'shiftit'
 cask 'dropbox'
+cask 'gimp'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
