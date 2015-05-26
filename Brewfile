@@ -73,6 +73,7 @@ brew 'xz'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'rsense'
 brew 'pyenv'
+brew 'awscli'
 
 # sanemat/ricty
 tap 'sanemat/font'
