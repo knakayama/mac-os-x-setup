@@ -40,7 +40,7 @@ tap 'homebrew/versions'
 
 # others
 tap 'motemen/ghq'
-brew 'ghq'
+brew 'ghq', args: ['completions']
 brew 'coreutils'
 brew 'ctags'
 brew 'fontconfig'
