@@ -21,6 +21,7 @@ cask 'nmap'
 cask 'shiftit'
 cask 'dropbox'
 cask 'gimp'
+cask 'terraform'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
