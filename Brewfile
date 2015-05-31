@@ -22,6 +22,7 @@ cask 'shiftit'
 cask 'dropbox'
 cask 'gimp'
 cask 'terraform'
+cask 'packer'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
