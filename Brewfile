@@ -23,6 +23,7 @@ cask 'dropbox'
 cask 'gimp'
 cask 'terraform'
 cask 'packer'
+cask 'boot2docker'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
@@ -75,6 +76,7 @@ brew 'vim', args: ['with-lua', 'HEAD']
 brew 'rsense'
 brew 'pyenv'
 brew 'awscli'
+brew 'docker'
 
 # sanemat/ricty
 tap 'sanemat/font'
