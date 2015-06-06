@@ -77,6 +77,7 @@ brew 'rsense'
 brew 'pyenv'
 brew 'awscli'
 brew 'docker'
+brew 'jq'
 
 # sanemat/ricty
 tap 'sanemat/font'
