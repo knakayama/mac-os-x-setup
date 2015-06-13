@@ -83,6 +83,7 @@ brew 'kevwil/homebrew-patches/mutt', args: ['with-sidebar-patch', 'with-confirm-
 brew 'gpg'
 brew 'msmtp'
 brew 'fetchmail'
+brew 'urlview'
 
 # sanemat/ricty
 tap 'sanemat/font'
