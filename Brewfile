@@ -78,7 +78,8 @@ brew 'pyenv'
 brew 'awscli'
 brew 'docker'
 brew 'jq'
-brew 'mutt'
+brew tap 'kevwil/homebrew-patches'
+brew 'kevwil/homebrew-patches/mutt', args: ['with-sidebar-patch', 'with-confirm-attachement-patch', 'with-trash-folder-patch']
 
 # sanemat/ricty
 tap 'sanemat/font'
