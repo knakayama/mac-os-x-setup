@@ -84,6 +84,7 @@ brew 'gpg'
 brew 'msmtp'
 brew 'fetchmail'
 brew 'abook'
+brew 'weechat', args: ['with-ruby', 'with-python', 'with-perl']
 
 # sanemat/ricty
 tap 'sanemat/font'
