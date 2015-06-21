@@ -75,6 +75,7 @@ brew 'xz'
 brew 'vim', args: ['with-lua', 'HEAD']
 brew 'rsense'
 brew 'pyenv'
+brew 'plenv'
 brew 'awscli'
 brew 'docker'
 brew 'jq'
