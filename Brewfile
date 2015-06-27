@@ -80,7 +80,7 @@ brew 'perl-build'
 brew 'awscli'
 brew 'docker'
 brew 'jq'
-brew tap 'kevwil/homebrew-patches'
+tap 'kevwil/homebrew-patches'
 brew 'kevwil/homebrew-patches/mutt', args: ['with-sidebar-patch', 'with-confirm-attachement-patch', 'with-trash-folder-patch']
 brew 'gpg'
 brew 'msmtp'
