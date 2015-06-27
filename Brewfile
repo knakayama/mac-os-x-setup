@@ -87,6 +87,8 @@ brew 'msmtp'
 brew 'fetchmail'
 brew 'abook'
 brew 'weechat', args: ['with-ruby', 'with-python', 'with-perl']
+tap 'bfontaine/utils'
+brew 'rfc'
 
 # sanemat/ricty
 tap 'sanemat/font'
