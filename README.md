@@ -35,7 +35,8 @@ $ brew install ghq
 
 ```bash
 $ ghq get path@to.git
-$ ln -s path/to/git path/to/target
+$ cd ~/.ghq/path/to/git
+$ rake -t
 ```
 
 * Clone [my dotfiles](https://github.com/knakayama/dotfiles)
