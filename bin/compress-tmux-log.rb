@@ -5,20 +5,20 @@ require 'date'
 require 'find'
 require 'zlib'
 
-LOG_DIR  = "#{ENV['HOME']}/.tmuxlog"
+LOG_DIR  = "#{ENV['HOME']}/.tmux-ssh-logs"
 LOG_FILE = "#{LOG_DIR}/compress-tmux-log.log"
 
 Dir.mkdir(LOG_DIR) unless FileTest.directory?(LOG_DIR)
 
 def print_date(msg)
-  time = DateTime.now.strftime("%Y/%m/%d-%H:%M:%S")
+  time = DateTime.now.strftime('%Y/%m/%d-%H:%M:%S')
 
-  open(LOG_FILE, "a") do |f|
+  open(LOG_FILE, 'a') do |f|
     f.puts "#{time} #{msg}"
   end
 end
 
-print_date "START"
+print_date 'START'
 
 Find.find(LOG_DIR) do |fpath|
   next unless FileTest.file?(fpath)
@@ -29,8 +29,7 @@ Find.find(LOG_DIR) do |fpath|
     f_name.puts(open(fpath).read)
   end
   FileUtils.rm(fpath)
-  open(LOG_FILE, "w") { |f| f.puts(fpath) }
+  open(LOG_FILE, 'w') { |f| f.puts(fpath) }
 end
 
-print_date "END"
-
+print_date 'END'
