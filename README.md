@@ -11,6 +11,35 @@ sudo softwareupdate --install --recommended
 
 * Tweak caps-lock key to performe ctl key
 
+```text
+1. Open System Preferences
+2. Open Keyboard
+3. Modifiler Keys
+4. Change Caps Lock to Control
+```
+
+* Tweak date
+
+```text
+1. change date format to 24-hour style
+```
+
+* Tweak Display
+
+```text
+1. Open System Preferences
+2. Open Energy Saver
+3. Turn display off after 15m
+4. Open Display
+5. Max Brightness
+```
+
+* Tweak Dock
+
+```text
+1. check automaticaly hide and show the dock
+```
+
 * Install Xcode
 
 ```bash
@@ -104,34 +133,12 @@ $ ./bin/karabiner.sh
 2. enable file system shiled and web shiled
 ```
 
-* Tweak date
-
-```text
-1. change date format to 24-hour style
-```
-
 * Add startup app
 
 ```text
 1. Open System Preferences
 1. Open User & Groups
 1. Add firefox and iterm2
-```
-
-* Tweak Display
-
-```text
-1. Open System Preferences
-2. Open Energy Saver
-3. Turn display off after 15m
-4. Open Display
-5. Max Brightness
-```
-
-* Tweak Dock
-
-```text
-1. check automaticaly hide and show the dock
 ```
 
 * Compress tmux log
