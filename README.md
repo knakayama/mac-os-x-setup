@@ -122,9 +122,10 @@ $ ./bin/karabiner.sh
 
 ```text
 1. Open System Preferences
-2. Open Display
+2. Open Energy Saver
 3. Turn display off after 15m
-4. Max Brightness
+4. Open Display
+5. Max Brightness
 ```
 
 * Tweak Dock
