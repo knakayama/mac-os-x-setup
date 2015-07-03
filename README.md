@@ -118,11 +118,8 @@ $ ./bin/karabiner.sh
 ```text
 1. open System Preferences
 2. open Keyboard
-3. open Input Recource
+3. open Input Source
 4. add japanese
-# tweak japanese input method
-5. open karabiner
-6. Control+J to KANA/EISUU(toggle)
 ```
 
 * Use firefox sync
@@ -145,7 +142,8 @@ $ ./bin/karabiner.sh
 * Compress tmux log
 
 ```bash
-sudo cp -ipv $HOME/.ghq/github.com/knakayama/assets/mac-os-x-setup/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
+sudo cp -ipv $HOME/.ghq/github.com/knakayama/mac-os-x-setup/assets/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
+mkdir ~/Library/LaunchAgents
 sudo chown root ~/Library/LaunchAgents/local.compresstmuxlog.plist
 sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 ```
