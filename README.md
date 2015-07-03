@@ -148,3 +148,11 @@ sudo chown root ~/Library/LaunchAgents/local.compresstmuxlog.plist
 sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 ```
 
+* Enable ssh login
+
+```text
+1. Open System Preferences
+2. Open Sharing
+3. Enable remote login
+4. Only enable system user
+```
