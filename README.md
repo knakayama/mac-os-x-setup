@@ -88,6 +88,7 @@ $ brew tap Homebrew/brewdler
 ```bash
 $ ghq get git@github.com:knakayama/mac-os-x-setup.git
 $ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
+$ sudo chown $(whoami):staff /usr/local/{share,lib}
 $ brew brewdle --verbose
 ```
 
