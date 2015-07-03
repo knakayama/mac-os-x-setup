@@ -88,7 +88,7 @@ $ brew tap Homebrew/brewdler
 ```bash
 $ ghq get git@github.com:knakayama/mac-os-x-setup.git
 $ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
-$ brew brewdle
+$ brew brewdle --verbose
 ```
 
 * Change login shell
