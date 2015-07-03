@@ -157,3 +157,12 @@ sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 4. Only enable system user
 5. Edit /private/etc/sshd_config
 ```
+
+* Setup Network (Optional)
+
+```text
+1. Open System Preferences
+2. Open Network
+3. Setup network manually
+4. Add DNS
+```
