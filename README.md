@@ -155,4 +155,5 @@ sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 2. Open Sharing
 3. Enable remote login
 4. Only enable system user
+5. Edit /private/etc/sshd_config
 ```
