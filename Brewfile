@@ -81,7 +81,7 @@ brew 'awscli'
 brew 'docker'
 brew 'jq'
 tap 'kevwil/patches'
-brew 'kevwil/patches/mutt', args: ['with-sidebar-patch', 'with-confirm-attachement-patch', 'with-trash-folder-patch']
+brew 'kevwil/patches/mutt', args: ['with-sidebar-patch', 'with-confirm-attachement-patch', 'with-trash-patch']
 brew 'gpg'
 brew 'msmtp'
 brew 'getmail'
