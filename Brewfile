@@ -84,7 +84,7 @@ tap 'kevwil/patches'
 brew 'kevwil/patches/mutt', args: ['with-sidebar-patch', 'with-confirm-attachement-patch', 'with-trash-folder-patch']
 brew 'gpg'
 brew 'msmtp'
-brew 'fetchmail'
+brew 'getmail'
 brew 'abook'
 brew 'weechat', args: ['with-ruby', 'with-python', 'with-perl']
 tap 'bfontaine/utils'
