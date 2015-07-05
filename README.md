@@ -88,7 +88,8 @@ $ brew tap Homebrew/brewdler
 ```bash
 $ ghq get git@github.com:knakayama/mac-os-x-setup.git
 $ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
-$ brew brewdle
+$ sudo chown $(whoami):staff /usr/local/{share,lib}
+$ brew brewdle --verbose
 ```
 
 * Change login shell
@@ -117,11 +118,8 @@ $ ./bin/karabiner.sh
 ```text
 1. open System Preferences
 2. open Keyboard
-3. open Input Recource
+3. open Input Source
 4. add japanese
-# tweak japanese input method
-5. open karabiner
-6. Control+J to KANA/EISUU(toggle)
 ```
 
 * Use firefox sync
@@ -144,8 +142,27 @@ $ ./bin/karabiner.sh
 * Compress tmux log
 
 ```bash
-sudo cp -ipv $HOME/.ghq/github.com/knakayama/assets/mac-os-x-setup/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
+sudo cp -ipv $HOME/.ghq/github.com/knakayama/mac-os-x-setup/assets/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
+mkdir ~/Library/LaunchAgents
 sudo chown root ~/Library/LaunchAgents/local.compresstmuxlog.plist
 sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 ```
 
+* Enable ssh login
+
+```text
+1. Open System Preferences
+2. Open Sharing
+3. Enable remote login
+4. Only enable system user
+5. Edit /private/etc/sshd_config
+```
+
+* Setup Network (Optional)
+
+```text
+1. Open System Preferences
+2. Open Network
+3. Setup network manually
+4. Add DNS
+```
