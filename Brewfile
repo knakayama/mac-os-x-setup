@@ -89,8 +89,8 @@ brew 'abook'
 brew 'weechat', args: ['with-ruby', 'with-python', 'with-perl']
 tap 'bfontaine/utils'
 brew 'rfc'
+brew 'mobile-shell'
 
 # sanemat/ricty
 tap 'sanemat/font'
 brew 'ricty'
-
