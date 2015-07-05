@@ -23,6 +23,7 @@ cask 'gimp'
 cask 'terraform'
 cask 'packer'
 cask 'boot2docker'
+cask 'macvim'
 
 # caskroom/fonts
 tap 'caskroom/fonts'
