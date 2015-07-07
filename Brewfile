@@ -91,6 +91,7 @@ brew 'weechat', args: ['with-ruby', 'with-python', 'with-perl']
 tap 'bfontaine/utils'
 brew 'rfc'
 brew 'mobile-shell'
+brew 'ripmime'
 
 # sanemat/ricty
 tap 'sanemat/font'
