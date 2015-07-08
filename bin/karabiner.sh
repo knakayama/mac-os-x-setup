@@ -6,6 +6,8 @@ $cli set private.command_l_to_lock_screen 1
 /bin/echo -n .
 $cli set repeat.initial_wait 400
 /bin/echo -n .
+$cli set remap.swapcolons 1
+/bin/echo -n .
 $cli set remap.jis_controlJ2kanaeisuu 1
 /bin/echo -n .
 $cli set option.emacsmode_controlLeftbracket 1
@@ -20,8 +22,8 @@ $cli set remap.sands2 1
 /bin/echo -n .
 $cli set option.emacsmode_controlH 1
 /bin/echo -n .
-$cli set parameter.mouse_key_scroll_natural_direction 1
+$cli set remap.mouse_keys_mode_2 1
 /bin/echo -n .
-$cli set remap.swapcolons 1
+$cli set parameter.mouse_key_scroll_natural_direction 1
 /bin/echo -n .
 /bin/echo
