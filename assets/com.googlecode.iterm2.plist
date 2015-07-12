@@ -114,7 +114,7 @@
     <key>NSTableView Sort Ordering KeyBingingTable</key>
     <array/>
     <key>NSWindow Frame NSFontPanel</key>
-    <string>637 37 581 94 0 0 1366 768 </string>
+    <string>633 385 581 77 0 0 1366 768 </string>
     <key>NSWindow Frame Preferences</key>
     <string>442 241 924 485 0 0 1366 768 </string>
     <key>NSWindow Frame iTerm Window 0</key>
@@ -668,11 +668,11 @@
         <key>Name</key>
         <string>Default</string>
         <key>Non Ascii Font</key>
-        <string>Ricty-Bold 14</string>
+        <string>Ricty-Bold 18</string>
         <key>Non-ASCII Anti Aliased</key>
         <true/>
         <key>Normal Font</key>
-        <string>Ricty-Bold 14</string>
+        <string>Ricty-Bold 18</string>
         <key>Option Key Sends</key>
         <integer>0</integer>
         <key>Prompt Before Closing 2</key>
@@ -913,7 +913,7 @@
     <key>SUHasLaunchedBefore</key>
     <true/>
     <key>SULastCheckTime</key>
-    <date>2015-07-11T07:20:32Z</date>
+    <date>2015-07-12T07:35:17Z</date>
     <key>SUSkippedVersion</key>
     <string>2.1.1</string>
     <key>SavePasteHistory</key>
