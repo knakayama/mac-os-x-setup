@@ -93,6 +93,7 @@ brew 'rfc'
 brew 'mobile-shell'
 brew 'ripmime'
 brew 'urlview'
+brew 'xhyve'
 
 # sanemat/ricty
 tap 'sanemat/font'
