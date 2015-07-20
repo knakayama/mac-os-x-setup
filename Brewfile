@@ -92,6 +92,7 @@ tap 'bfontaine/utils'
 brew 'rfc'
 brew 'mobile-shell'
 brew 'ripmime'
+brew 'urlview'
 
 # sanemat/ricty
 tap 'sanemat/font'
