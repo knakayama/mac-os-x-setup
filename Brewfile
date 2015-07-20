@@ -92,7 +92,7 @@ tap 'bfontaine/utils'
 brew 'rfc'
 brew 'mobile-shell'
 brew 'ripmime'
-brew 'urlview'
+brew 'extract_url'
 brew 'xhyve'
 
 # sanemat/ricty
