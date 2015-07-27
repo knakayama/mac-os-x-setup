@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTDPLIST1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
         <key>Label</key>
-        <string>local.homebrewupdate</string>
+        <string>local.knakayama.homebrewupdate</string>
         <key>ProgramArguments</key>
         <array>
-            <string>/usr/local/bin/brew</string>
-            <string>update</string>
+          <string>/usr/local/bin/brew</string>
+          <string>update</string>
         </array>
-        <key>RunAtLoad</key>
-        <true/>
+        <key>UserName</key>
+        <string>knakayama</string>
+        <key>StartCalendarInterval</key>
+        <dict>
+          <key>Hour</key>
+          <integer>2</integer>
+          <key>Minute</key>
+          <integer>00</integer>
+        </dict>
     </dict>
 </plist>
-
