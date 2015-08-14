@@ -22,7 +22,6 @@ cask 'dropbox'
 cask 'gimp'
 cask 'terraform'
 cask 'packer'
-cask 'boot2docker'
 cask 'macvim'
 
 # caskroom/fonts
@@ -79,7 +78,6 @@ brew 'pyenv'
 brew 'plenv'
 brew 'perl-build'
 brew 'awscli'
-brew 'docker'
 brew 'jq'
 tap 'kevwil/patches'
 brew 'kevwil/patches/mutt', args: ['with-sidebar-patch', 'with-confirm-attachement-patch', 'with-trash-patch']
