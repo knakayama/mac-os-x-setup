@@ -92,7 +92,6 @@ brew 'mobile-shell'
 brew 'ripmime'
 brew 'extract_url'
 brew 'xhyve'
-brew 'ansible'
 
 # sanemat/ricty
 tap 'sanemat/font'
