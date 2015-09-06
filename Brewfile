@@ -92,6 +92,8 @@ brew 'mobile-shell'
 brew 'ripmime'
 brew 'extract_url'
 brew 'xhyve'
+tap 'yudai/gotty'
+brew 'gotty'
 
 # sanemat/ricty
 tap 'sanemat/font'
