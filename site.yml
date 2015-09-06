@@ -1,0 +1,8 @@
+---
+- name: Setup my MacBook
+  hosts: localhost
+  connection: local
+  sudo: no
+
+  roles:
+    - mac

@@ -1,0 +1,3 @@
+---
+- name: Run fc-cache
+  command: fc-cache -vf
