@@ -46,18 +46,10 @@ sudo softwareupdate --install --recommended
 $ xcode-select --install
 ```
 
-* Install [homebrew](http://brew.sh/)
-
-```bash
-$ sudo chown $(whoami):staff /usr/local/{share,lib}
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew doctor
-```
-
 * Clone [my mac os x setup repository](https://github.com/knakayama/mac-os-x-setup)
 
 ```bash
-$ git clone https://github.com/knakayama/mac-os-x-setup)
+$ git clone https://github.com/knakayama/mac-os-x-setup ~/.ghq/github.com/knakayama/mac-os-x-setup
 ```
 
 * Run [Ansible](https://github.com/ansible/ansible)
@@ -68,7 +60,7 @@ $ pyenv install <python-version>
 $ pyenv global <python-version>
 $ pip install ansible
 $ cd mac-os-x-setup
-$ ansible-playbook -i hosts site.yml -vvv
+$ ansible-playbook -i hosts site.yml -vv
 ```
 
 * add japanese input method
