@@ -1,0 +1,5 @@
+---
+- include: homebrew.yml
+- include: ricty.yml
+- include: git.yml
+- include: misc.yml

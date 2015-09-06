@@ -1,0 +1,41 @@
+---
+- name: Check if my private repository already cloned
+  shell: |
+    test -d ~/.ghq/github.com/knakayama/credentials
+  register: res
+  always_run: yes
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Clone my private repository
+  command: |
+    ghq https://github.com/knakayama/credentials.git
+  when: res|changed
+
+- name: Setup credentials
+  shell: |
+    rake -t
+  args:
+    chdir: ~/.ghq/github.com/knakayama/credentials
+    creates: ~/.msmtprc
+
+- name: Check if my dotfiles repository already cloned
+  shell: |
+    test -d ~/.ghq/github.com/knakayama/dotfiles
+  register: res
+  always_run: yes
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Clone my dotfiles repository
+  command: |
+    ghq git@github.com:knakayama/dotfiles.git
+  when: res|changed
+
+- name: Setup dotfiles
+  shell: |
+    git submodule update --init
+    rake -t
+  args:
+    chdir: ~/.ghq/github.com/knakayama/dotfiles
+    creates: ~/.vimrc

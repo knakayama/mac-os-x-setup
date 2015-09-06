@@ -49,68 +49,26 @@ $ xcode-select --install
 * Install [homebrew](http://brew.sh/)
 
 ```bash
+$ sudo chown $(whoami):staff /usr/local/{share,lib}
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 $ brew doctor
-```
-
-* Clone [ghq with homebrew](https://github.com/motemen/homebrew-ghq)
-
-```bash
-$ brew tap motemen/ghq
-$ brew install ghq
-```
-
-* Clone private repository
-
-```bash
-$ ghq get path@to.git
-$ cd ~/.ghq/path/to/git
-$ rake -t
-```
-
-* Clone [my dotfiles](https://github.com/knakayama/dotfiles)
-
-```bash
-$ ghq get git@github.com:knakayama/dotfiles.git
-$ cd ~/.ghq/github.com/knakayama/dotfiles
-$ git submodule update --init
-$ rake -t
-```
-
-* Install [Homebrew brewdler](https://github.com/Homebrew/homebrew-brewdler)
-
-```bash
-$ brew tap Homebrew/brewdler
 ```
 
 * Clone [my mac os x setup repository](https://github.com/knakayama/mac-os-x-setup)
 
 ```bash
-$ ghq get git@github.com:knakayama/mac-os-x-setup.git
-$ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
-$ sudo chown $(whoami):staff /usr/local/{share,lib}
-$ brew brewdle --verbose
+$ git clone https://github.com/knakayama/mac-os-x-setup)
 ```
 
-* Change login shell
+* Run [Ansible](https://github.com/ansible/ansible)
 
 ```bash
-$ sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
-```
-
-* Use [Ricty font](https://github.com/yascentur/Ricty)
-
-```bash
-$ cp -f /usr/local/Cellar/ricty/<version>/share/fonts/Ricty*.ttf ~/Library/Fonts/
-$ fc-cache -f
-$ ./bin/iterm2-conf-util.rb --restore
-```
-
-* Setup karabiner
-
-```bash
-$ ln -sf $HOME/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml $HOME/Library/Application\ Support/Karabiner/private.xml
-$ ./bin/karabiner.sh
+$ brew install pyenv
+$ pyenv install <python-version>
+$ pyenv global <python-version>
+$ pip install ansible
+$ cd mac-os-x-setup
+$ ansible-playbook -i hosts site.yml -vvv
 ```
 
 * add japanese input method
@@ -137,15 +95,6 @@ $ ./bin/karabiner.sh
 1. Open System Preferences
 1. Open User & Groups
 1. Add firefox and iterm2
-```
-
-* Compress tmux log
-
-```bash
-sudo cp -ipv $HOME/.ghq/github.com/knakayama/mac-os-x-setup/assets/local.compresstmuxlog.plist $HOME/Library/LaunchAgents
-mkdir ~/Library/LaunchAgents
-sudo chown root ~/Library/LaunchAgents/local.compresstmuxlog.plist
-sudo launchctl load -w $HOME/Library/LaunchAgents/local.compresstmuxlog.plist
 ```
 
 * Enable ssh login

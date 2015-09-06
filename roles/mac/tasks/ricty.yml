@@ -1,0 +1,22 @@
+---
+## todo: not work
+#- name: Install ricty fonts
+#  shell: |
+#    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf $HOME/Library/Fonts
+#  args:
+#    creates: $HOME/Library/Fonts/Ricty-Bold.ttf
+#  notify: Run fc-cache
+
+- name: Check if ricty fonts are installed
+  shell: |
+    test -f $HOME/Library/Fonts/Ricty-Bold.ttf
+  register: res
+  always_run: yes
+  failed_when: no
+  changed_when: res.rc != 0
+
+- name: Install ricty fonts
+  shell: |
+    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf $HOME/Library/Fonts
+  when: res|changed
+  notify: Run fc-cache
