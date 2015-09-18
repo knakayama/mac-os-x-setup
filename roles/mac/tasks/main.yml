@@ -1,6 +1,7 @@
 ---
 - include: homebrew.yml
 - include: npm.yml
+- include: misc-package.yml
 - include: ricty.yml
 - include: git.yml
 - include: misc.yml

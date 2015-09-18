@@ -1,0 +1,16 @@
+---
+- name: Check if rfc already installed
+  command: |
+    type rfc
+  register: res
+  failed_when: no
+  changed_when: res.rc != 0
+  tags:
+    - misc-package
+
+- name: Install rfc
+  shell: |
+    curl -sL https://raw.github.com/bfontaine/rfc/master/rfc > /usr/local/bin/rfc  && chmod +x /usr/local/bin/rfc
+  when: res|changed
+  tags:
+    - misc-package
