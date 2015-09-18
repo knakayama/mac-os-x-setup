@@ -74,4 +74,3 @@
   when: res|changed
   tags:
     - homebrew
-
