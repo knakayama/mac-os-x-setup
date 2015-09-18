@@ -67,7 +67,7 @@ homebrew_packages:
   - { name: ricty }
   - { name: mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
   - { name: muttils }
-  - { name: gawk }
+  - { name: npm }
 
 homebrew_cask_packages:
   - { name: avast }
@@ -89,3 +89,6 @@ homebrew_cask_packages:
   - { name: terraform }
   - { name: packer }
   - { name: macvim }
+
+npm_packages:
+  - { name: http-console }

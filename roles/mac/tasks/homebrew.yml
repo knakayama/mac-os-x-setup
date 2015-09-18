@@ -58,3 +58,20 @@
   with_items: homebrew_cask_packages
   tags:
     - homebrew
+
+- name: Check if translate-shell already installed
+  command: |
+    type trans
+  register: res
+  failed_when: no
+  changed_when: res.rc != 0
+  tags:
+    - homebrew
+
+- name: Install translate-shell
+  command: |
+    brew install http://www.soimort.org/translate-shell/translate-shell.rb
+  when: res|changed
+  tags:
+    - homebrew
+
