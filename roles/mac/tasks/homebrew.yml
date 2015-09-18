@@ -1,13 +1,42 @@
 ---
+- name: Check if homebrew already installed
+  command: |
+    type brew
+  register: res
+  failed_when: no
+  changed_when: res.rc != 0
+  tags:
+    - homebrew
+
+- name: Change /usr/local owners
+  command: |
+    chown $USER:staff /usr/local/share
+    chown $USER:staff /usr/local/lib
+  sudo: yes
+  when: res|changed
+  tags:
+    - homebrew
+
+- name: Install homebrew
+  command: |
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  when: res|changed
+  tags:
+    - homebrew
+
 - name: Add homebrew taps
   homebrew_tap:
     tap: "{{ item.name }}"
     state: present
   with_items: homebrew_taps
+  tags:
+    - homebrew
 
 - name: Update homebrew
   homebrew:
     update_homebrew: yes
+  tags:
+    - homebrew
 
 - name: Install homebrew packages
   homebrew:
@@ -19,9 +48,13 @@
       else item.install_options
     }}"
   with_items: homebrew_packages
+  tags:
+    - homebrew
 
 - name: Install homebrew cask packages
   homebrew_cask:
     name: "{{ item.name }}"
     state: "{{ item.state | default('installed') }}"
   with_items: homebrew_cask_packages
+  tags:
+    - homebrew

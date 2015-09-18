@@ -3,14 +3,17 @@
   shell: |
     test -d ~/.ghq/github.com/knakayama/credentials
   register: res
-  always_run: yes
   failed_when: no
   changed_when: res.rc != 0
+  tags:
+    - git
 
 - name: Clone my private repository
   command: |
     ghq https://github.com/knakayama/credentials.git
   when: res|changed
+  tags:
+    - git
 
 - name: Setup credentials
   shell: |
@@ -18,19 +21,24 @@
   args:
     chdir: ~/.ghq/github.com/knakayama/credentials
     creates: ~/.msmtprc
+  tags:
+    - git
 
 - name: Check if my dotfiles repository already cloned
   shell: |
     test -d ~/.ghq/github.com/knakayama/dotfiles
   register: res
-  always_run: yes
   failed_when: no
   changed_when: res.rc != 0
+  tags:
+    - git
 
 - name: Clone my dotfiles repository
   command: |
     ghq git@github.com:knakayama/dotfiles.git
   when: res|changed
+  tags:
+    - git
 
 - name: Setup dotfiles
   shell: |
@@ -39,3 +47,5 @@
   args:
     chdir: ~/.ghq/github.com/knakayama/dotfiles
     creates: ~/.vimrc
+  tags:
+    - git

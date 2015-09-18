@@ -67,6 +67,7 @@ homebrew_packages:
   - { name: ricty }
   - { name: mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
   - { name: muttils }
+  - { name: gawk }
 
 homebrew_cask_packages:
   - { name: avast }
