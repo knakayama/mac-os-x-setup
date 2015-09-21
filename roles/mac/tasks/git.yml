@@ -42,8 +42,7 @@
 
 - name: Setup dotfiles
   shell: |
-    git submodule update --init
-    rake -t
+    git submodule update --init && rake -t
   args:
     chdir: ~/.ghq/github.com/knakayama/dotfiles
     creates: ~/.vimrc

@@ -1,0 +1,8 @@
+---
+- name: Install pip packages
+  pip:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('present') }}"
+  with_items: pip_packages
+  tags:
+    - pip

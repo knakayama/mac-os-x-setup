@@ -1,4 +1,6 @@
 ---
+ansible_python_interpreter: /Users/knakayama/.pyenv/shims/python
+
 homebrew_taps:
   - { name: caskroom/cask }
   - { name: homebrew/binary }
@@ -89,6 +91,12 @@ homebrew_cask_packages:
   - { name: terraform }
   - { name: packer }
   - { name: macvim }
+
+pip_packages:
+  - { name: flake8 }
+  - { name: ipython }
+  - { name: ansible_lint }
+  - { name: ansible_shell }
 
 npm_packages:
   - { name: http-console }
