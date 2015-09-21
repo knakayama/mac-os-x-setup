@@ -45,7 +45,6 @@ homebrew_packages:
   - { name: rbenv-gem-rehash }
   - { name: w3m }
   - { name: tmux }
-  - { name: reattach-to-user-namespace }
   - { name: sha2 }
   - { name: xz }
   - { name: lua }
