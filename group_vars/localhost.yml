@@ -70,6 +70,7 @@ homebrew_packages:
   - { name: mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
   - { name: muttils }
   - { name: npm }
+  - { name: fpp }
 
 homebrew_cask_packages:
   - { name: avast }
