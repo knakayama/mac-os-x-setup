@@ -79,7 +79,6 @@ homebrew_cask_packages:
   - { name: google-japanese-ime }
   - { name: java }
   - { name: skype }
-  - { name: slack }
   - { name: karabiner }
   - { name: vagrant }
   - { name: virtualbox }
