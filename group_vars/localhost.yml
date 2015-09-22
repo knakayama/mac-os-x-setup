@@ -71,6 +71,7 @@ homebrew_packages:
   - { name: muttils }
   - { name: npm }
   - { name: fpp }
+  - { name: bash }
 
 homebrew_cask_packages:
   - { name: avast }
