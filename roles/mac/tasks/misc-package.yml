@@ -14,3 +14,28 @@
   when: res|changed
   tags:
     - misc-package
+
+- name: Check if termtile already installed
+  shell: |
+    test -d ~/.termtile
+  register: res
+  failed_when: no
+  changed_when: res.rc != 0
+  tags:
+    - misc-package
+
+- name: Clone termtile
+  command: |
+    ghq get git@github.com:apaszke/termtile.git
+  when: res|changed
+  tags:
+    - misc-package
+
+- name: Install termtile
+  shell: |
+    ./install.sh yes
+  args:
+    chdir: ~/.ghq/github.com/apaszke/termtile
+  when: res|changed
+  tags:
+    - misc-package
