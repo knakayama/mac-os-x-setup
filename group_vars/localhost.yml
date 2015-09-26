@@ -68,7 +68,6 @@ homebrew_packages:
   - { name: gotty }
   - { name: ricty }
   - { name: mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
-  - { name: muttils }
   - { name: npm }
   - { name: fpp }
   - { name: bash }
