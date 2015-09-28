@@ -98,3 +98,6 @@ pip_packages:
 
 npm_packages:
   - { name: http-console }
+
+go_packages:
+  - { name: github.com/bfontaine/httpdoc }

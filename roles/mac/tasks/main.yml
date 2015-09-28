@@ -2,6 +2,7 @@
 - include: homebrew.yml
 - include: pip.yml
 - include: npm.yml
+- include: go.yml
 - include: misc-package.yml
 - include: ricty.yml
 - include: git.yml

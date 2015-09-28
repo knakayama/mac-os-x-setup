@@ -1,0 +1,16 @@
+---
+- name: Check if httpdoc already installed
+  shell: |
+    type httpdoc
+  register: res
+  failed_when: no
+  changed_when: res.rc != 0
+  tags:
+    - go
+
+- name: Install go packages
+  shell: |
+    go get github.com/bfontaine/httpdoc
+  when: res|changed
+  tags:
+    - go
