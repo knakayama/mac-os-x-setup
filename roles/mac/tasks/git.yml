@@ -24,6 +24,12 @@
   tags:
     - git
 
+- name: Clone git repositories
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ item.dest }}"
+  with_items: git_repositories
+
 - name: Check if my dotfiles repository already cloned
   shell: |
     test -d ~/.ghq/github.com/knakayama/dotfiles
