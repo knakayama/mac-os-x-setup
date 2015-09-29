@@ -105,3 +105,8 @@ npm_packages:
 
 go_packages:
   - { name: github.com/bfontaine/httpdoc }
+
+git_repositories:
+  - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
+  - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins }
+  - { repo: "https://github.com/zsh-users/antigen.git", dest: ~/.zsh/plugin/antigen.zsh }
