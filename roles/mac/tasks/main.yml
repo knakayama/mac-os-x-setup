@@ -1,5 +1,6 @@
 ---
 - include: homebrew.yml
+- include: gem.yml
 - include: pip.yml
 - include: npm.yml
 - include: go.yml

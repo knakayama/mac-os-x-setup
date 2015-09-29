@@ -96,6 +96,9 @@ pip_packages:
   - { name: ansible_lint }
   - { name: ansible_shell }
 
+gem_packages:
+  - { name: rubocop }
+
 npm_packages:
   - { name: http-console }
 
