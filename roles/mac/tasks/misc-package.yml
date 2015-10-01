@@ -4,6 +4,7 @@
     type rfc
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - misc-package
@@ -20,6 +21,7 @@
     test -d ~/.termtile
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - misc-package

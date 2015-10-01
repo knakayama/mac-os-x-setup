@@ -4,6 +4,7 @@
     type brew
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - homebrew
@@ -64,6 +65,7 @@
     type trans
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - homebrew

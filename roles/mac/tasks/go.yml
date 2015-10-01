@@ -4,6 +4,7 @@
     type httpdoc
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - go
