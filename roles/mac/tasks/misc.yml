@@ -4,6 +4,7 @@
     echo $SHELL
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.stdout.find('/usr/local/bin/zsh') != 0
   tags:
     - misc
@@ -23,6 +24,7 @@
     executable: /bin/bash
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - misc
@@ -39,6 +41,7 @@
     test -f ~/Library/Application\ Support/Karabiner/private.xml
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - misc

@@ -12,6 +12,7 @@
     test -f $HOME/Library/Fonts/Ricty-Bold.ttf
   register: res
   failed_when: no
+  always_run: yes
   changed_when: res.rc != 0
   tags:
     - ricty
