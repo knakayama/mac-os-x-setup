@@ -6,15 +6,11 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - git
 
 - name: Clone my private repository
   command: |
     ghq https://github.com/knakayama/credentials.git
   when: res|changed
-  tags:
-    - git
 
 - name: Setup credentials
   shell: |
@@ -22,8 +18,27 @@
   args:
     chdir: ~/.ghq/github.com/knakayama/credentials
     creates: ~/.msmtprc
-  tags:
-    - git
+
+- name: Create antibody directory
+  file:
+    path: ~/.antibody
+    state: directory
+
+- name: Fetch antibody
+  get_url:
+    url: http://antibody.elasticbeanstalk.com/latest/Darwin/x86_64
+    dest: /tmp/antibody.tar.gz
+
+- name: Unarchive antibody
+  unarchive:
+    src: /tmp/antibody.tar.gz
+    dest: ~/.antibody
+
+# 2.0 feature
+#- name: Fetch antibody
+#  unarchive:
+#    src: http://antibody.elasticbeanstalk.com/latest/Darwin/x86_64
+#    dest: ~/.antibody
 
 - name: Clone git repositories
   git:
@@ -38,15 +53,11 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - git
 
 - name: Clone my dotfiles repository
   command: |
     ghq git@github.com:knakayama/dotfiles.git
   when: res|changed
-  tags:
-    - git
 
 - name: Setup dotfiles
   shell: |
@@ -54,5 +65,3 @@
   args:
     chdir: ~/.ghq/github.com/knakayama/dotfiles
     creates: ~/.vimrc
-  tags:
-    - git

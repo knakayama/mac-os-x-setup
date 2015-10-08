@@ -11,6 +11,7 @@ homebrew_taps:
   - { name: kevwil/patches }
   - { name: bfontaine/utils }
   - { name: yudai/gotty }
+  - { name: caarlos0/antibody }
 
 homebrew_packages:
   - { name: brew-cask }
@@ -71,6 +72,7 @@ homebrew_packages:
   - { name: npm }
   - { name: fpp }
   - { name: bash }
+  - { name: antibody }
 
 homebrew_cask_packages:
   - { name: avast }
@@ -110,4 +112,3 @@ go_packages:
 git_repositories:
   - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins }
-  - { repo: "https://github.com/zsh-users/antigen.git", dest: ~/.zsh/plugin/antigen.zsh }
