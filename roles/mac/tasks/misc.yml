@@ -6,16 +6,12 @@
   failed_when: no
   always_run: yes
   changed_when: res.stdout.find('/usr/local/bin/zsh') != 0
-  tags:
-    - misc
 
 - name: Change login shell
   shell: |
     dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
   when: res|changed
   sudo: yes
-  tags:
-    - misc
 
 - name: Check if iterm2 configurations are differ
   shell: |
@@ -26,15 +22,11 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - misc
 
 - name: Restore iterm2 configuration
   shell: |
     plutil -convert binary1 -o ~/Library/Preferences/com.googlecode.iterm2.plist ./assets/com.googlecode.iterm2.plist
   when: res|changed
-  tags:
-    - misc
 
 - name: Check if karabiner configuration exists
   shell: |
@@ -43,13 +35,9 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - misc
 
 - name: Setup Karabiner
   shell: |
     ln -sf ~/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml ~/Library/Application\ Support/Karabiner/private.xml
     ./bin/karabiner.sh
   when: res|changed
-  tags:
-    - misc

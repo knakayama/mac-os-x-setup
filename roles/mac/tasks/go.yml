@@ -6,12 +6,8 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - go
 
 - name: Install go packages
   shell: |
     go get github.com/bfontaine/httpdoc
   when: res|changed
-  tags:
-    - go

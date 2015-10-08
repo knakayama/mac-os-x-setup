@@ -5,5 +5,3 @@
     global: yes
     state: present
   with_items: npm_packages
-  tags:
-    - npm

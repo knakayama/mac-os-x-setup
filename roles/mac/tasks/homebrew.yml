@@ -6,8 +6,6 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - homebrew
 
 - name: Change /usr/local owners
   command: |
@@ -15,29 +13,21 @@
     chown $USER:staff /usr/local/lib
   sudo: yes
   when: res|changed
-  tags:
-    - homebrew
 
 - name: Install homebrew
   command: |
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   when: res|changed
-  tags:
-    - homebrew
 
 - name: Add homebrew taps
   homebrew_tap:
     tap: "{{ item.name }}"
     state: present
   with_items: homebrew_taps
-  tags:
-    - homebrew
 
 - name: Update homebrew
   homebrew:
     update_homebrew: yes
-  tags:
-    - homebrew
 
 - name: Install homebrew packages
   homebrew:
@@ -49,16 +39,12 @@
       else item.install_options
     }}"
   with_items: homebrew_packages
-  tags:
-    - homebrew
 
 - name: Install homebrew cask packages
   homebrew_cask:
     name: "{{ item.name }}"
     state: "{{ item.state | default('installed') }}"
   with_items: homebrew_cask_packages
-  tags:
-    - homebrew
 
 - name: Check if translate-shell already installed
   command: |
@@ -67,12 +53,8 @@
   failed_when: no
   always_run: yes
   changed_when: res.rc != 0
-  tags:
-    - homebrew
 
 - name: Install translate-shell
   command: |
     brew install http://www.soimort.org/translate-shell/translate-shell.rb
   when: res|changed
-  tags:
-    - homebrew

@@ -5,5 +5,3 @@
     state: "{{ item.state | default('present') }}"
     executable: /Users/knakayama/.rbenv/shims/gem
   with_items: gem_packages
-  tags:
-      - gem
