@@ -61,7 +61,7 @@ homebrew_packages:
   - { name: getmail }
   - { name: abook }
   - { name: ripmime }
-  - { name: extract_url }
+  - { name: urlview }
   - { name: weechat, install_options: "with-ruby, with-python, with-perl" }
   - { name: rfc }
   - { name: mobile-shell }
