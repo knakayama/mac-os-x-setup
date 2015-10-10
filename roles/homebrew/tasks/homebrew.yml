@@ -45,16 +45,3 @@
     name: "{{ item.name }}"
     state: "{{ item.state | default('installed') }}"
   with_items: homebrew_cask_packages
-
-- name: Check if translate-shell already installed
-  command: |
-    type trans
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
-
-- name: Install translate-shell
-  command: |
-    brew install http://www.soimort.org/translate-shell/translate-shell.rb
-  when: res|changed

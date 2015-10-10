@@ -17,3 +17,9 @@
   args:
     chdir: ~/.ghq/github.com/apaszke/termtile
     creates: ~/.termtile/getScreenInfo
+
+- name: Install translate-shell
+  shell: |
+    brew install http://www.soimort.org/translate-shell/translate-shell.rb
+  args:
+    creates: /usr/local/bin/trans
