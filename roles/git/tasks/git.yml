@@ -1,46 +1,16 @@
 ---
-- name: Check if my private repository already cloned
-  shell: |
-    test -d ~/.ghq/github.com/knakayama/credentials
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
-
-- name: Clone my private repository
-  command: |
-    ghq https://github.com/knakayama/credentials.git
-  when: res|changed
-
-- name: Setup credentials
-  shell: |
-    rake -t
-  args:
-    chdir: ~/.ghq/github.com/knakayama/credentials
-    creates: ~/.msmtprc
-
 - name: Clone git repositories
   git:
     repo: "{{ item.repo }}"
     dest: "{{ item.dest }}"
   with_items: git_repositories
 
-- name: Check if my dotfiles repository already cloned
+- name: Setup my git repositories
   shell: |
-    test -d ~/.ghq/github.com/knakayama/dotfiles
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
-
-- name: Clone my dotfiles repository
-  command: |
-    ghq git@github.com:knakayama/dotfiles.git
-  when: res|changed
-
-- name: Setup dotfiles
-  shell: |
-    git submodule update --init && rake -t
+    rake -t
   args:
-    chdir: ~/.ghq/github.com/knakayama/dotfiles
-    creates: ~/.vimrc
+    chdir: "{{ item.chdir }}"
+    creates: "{{ item.creates }}"
+  with_items:
+    - { chdir: ~/.ghq/github.com/knakayama/credentials, creates: ~/.msmtprc }
+    - { chdir: ~/.ghq/github.com/knakayama/dotfiles, creates: ~/.vimrc }
