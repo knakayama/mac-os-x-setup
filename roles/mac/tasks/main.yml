@@ -1,36 +1,4 @@
 ---
-- include: homebrew.yml
+- include: mac.yml
   tags:
-    - homebrew
-
-- include: gem.yml
-  tags:
-    - gem
-
-- include: pip.yml
-  tags:
-    - pip
-
-- include: npm.yml
-  tags:
-    - npm
-
-- include: go.yml
-  tags:
-    - go
-
-- include: misc-package.yml
-  tags:
-    - misc-package
-
-- include: ricty.yml
-  tags:
-    - ricty
-
-- include: git.yml
-  tags:
-    - git
-
-- include: misc.yml
-  tags:
-    - misc
+    - mac

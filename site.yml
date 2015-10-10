@@ -3,6 +3,13 @@
   hosts: localhost
   connection: local
   sudo: no
-
   roles:
+    - homebrew
+    - git
+    - gem
+    - go
+    - npm
+    - pip
+    - tools
+    - ricty
     - mac

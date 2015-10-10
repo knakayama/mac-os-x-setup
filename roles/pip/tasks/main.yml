@@ -1,0 +1,4 @@
+---
+- include: pip.yml
+  tags:
+    - pip

@@ -1,0 +1,4 @@
+---
+- include: ricty.yml
+  tags:
+    - ricty

@@ -1,0 +1,4 @@
+---
+- include: go.yml
+  tags:
+    - go

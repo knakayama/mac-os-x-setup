@@ -1,0 +1,4 @@
+---
+- include: git.yml
+  tags:
+    - git
