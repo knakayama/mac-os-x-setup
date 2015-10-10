@@ -112,3 +112,6 @@ go_packages:
 git_repositories:
   - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
+
+go_packages:
+  - { name: httpdoc, path: github.com/bfontaine/httpdoc }
