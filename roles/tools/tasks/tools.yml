@@ -1,33 +1,19 @@
 ---
-- name: Check if rfc already installed
-  command: |
-    type rfc
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
-
 - name: Install rfc
   shell: |
     curl -sL https://raw.github.com/bfontaine/rfc/master/rfc > /usr/local/bin/rfc  && chmod +x /usr/local/bin/rfc
-  when: res|changed
-
-- name: Check if termtile already installed
-  shell: |
-    test -d ~/.termtile
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
+  args:
+    creates: /usr/local/bin/rfc
 
 - name: Clone termtile
-  command: |
+  shell: |
     ghq get git@github.com:apaszke/termtile.git
-  when: res|changed
+  args:
+    creates: ~/.ghq/github.com/apaszke/termtile/README.md
 
 - name: Install termtile
   shell: |
     ./install.sh yes
   args:
     chdir: ~/.ghq/github.com/apaszke/termtile
-  when: res|changed
+    creates: ~/.termtile/getScreenInfo
