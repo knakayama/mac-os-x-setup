@@ -1,4 +1,2 @@
 ---
 - include: mac.yml
-  tags:
-    - mac

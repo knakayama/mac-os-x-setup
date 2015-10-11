@@ -1,4 +1,2 @@
 ---
 - include: gem.yml
-  tags:
-    - gem

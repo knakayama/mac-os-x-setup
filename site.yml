@@ -4,12 +4,12 @@
   connection: local
   sudo: no
   roles:
-    - homebrew
-    - git
-    - gem
-    - go
-    - npm
-    - pip
-    - tools
-    - ricty
-    - mac
+    - { role: homebrew, tags: [ homebrew ] }
+    - { role: git,      tags: [ git ] }
+    - { role: gem,      tags: [ gem ] }
+    - { role: go,       tags: [ go ] }
+    - { role: npm,      tags: [ npm ] }
+    - { role: pip,      tags: [ pip ] }
+    - { role: tools,    tags: [ tools ] }
+    - { role: ricty,    tags: [ ricty ] }
+    - { role: mac,      tags: [ mac ] }
