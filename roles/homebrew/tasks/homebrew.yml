@@ -1,23 +1,23 @@
 ---
-- name: Check if homebrew already installed
-  command: |
-    type brew
-  register: res
+- name: Check if /usr/local/{share,lib} owners
+  shell: |
+    ls -ld /usr/local/share /usr/local/lib
+  register: share_lib_result
   failed_when: no
   always_run: yes
-  changed_when: res.rc != 0
+  changed_when: share_lib_result.stdout.find('root') != -1
 
-- name: Change /usr/local owners
-  command: |
-    chown $USER:staff /usr/local/share
-    chown $USER:staff /usr/local/lib
+- name: Change /usr/local/{share,lib} owners
+  shell: |
+    chown $USER:staff /usr/local/share /usr/local/lib
   sudo: yes
-  when: res|changed
+  when: share_lib_result|changed
 
 - name: Install homebrew
-  command: |
+  shell: |
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  when: res|changed
+  args:
+    creates: /usr/local/bin/brew
 
 - name: Add homebrew taps
   homebrew_tap:
