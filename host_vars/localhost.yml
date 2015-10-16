@@ -53,6 +53,7 @@ homebrew_packages:
   - { name: vim, install_options: with-lua }
   - { name: rsense }
   - { name: pyenv }
+  - { name: pyenv-virtualenv }
   - { name: plenv }
   - { name: perl-build }
   - { name: awscli }
