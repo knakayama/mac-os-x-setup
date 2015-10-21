@@ -6,10 +6,9 @@
     creates: /usr/local/bin/rfc
 
 - name: Clone termtile
-  shell: |
-    ghq get git@github.com:apaszke/termtile.git
-  args:
-    creates: ~/.ghq/github.com/apaszke/termtile/README.md
+  git:
+    repo: git@github.com:apaszke/termtile.git
+    dest: ~/.ghq/github.com/apaszke/termtile
 
 - name: Install termtile
   shell: |
