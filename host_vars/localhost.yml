@@ -1,6 +1,4 @@
 ---
-ansible_python_interpreter: /Users/knakayama/.pyenv/shims/python
-
 homebrew_taps:
   - { name: caskroom/cask }
   - { name: homebrew/binary }
