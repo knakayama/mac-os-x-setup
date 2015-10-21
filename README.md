@@ -89,7 +89,7 @@ $ ansible-playbook -i ./bin/hosts.py site.yml -vv
 1. Add firefox and iterm2
 ```
 
-* Enable ssh login
+* Enable ssh login (Optional)
 
 ```text
 1. Open System Preferences
