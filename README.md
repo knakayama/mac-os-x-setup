@@ -60,7 +60,7 @@ $ pyenv install <python-version>
 $ pyenv global <python-version>
 $ pip install ansible
 $ cd mac-os-x-setup
-$ ansible-playbook -i ./bin/hosts site.yml -vv
+$ ansible-playbook -i ./bin/hosts.py site.yml -vv
 ```
 
 * add japanese input method
