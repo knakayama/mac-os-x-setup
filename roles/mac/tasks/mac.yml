@@ -8,10 +8,10 @@
   changed_when: res.stdout.find('/usr/local/bin/zsh') != 0
 
 - name: Change login shell
+  become: true
   shell: |
     dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
   when: res|changed
-  sudo: yes
 
 - name: Check if iterm2 configurations are differ
   shell: |
