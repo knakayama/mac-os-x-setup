@@ -1,0 +1,5 @@
+flake8
+ipython
+ansible
+ansible_lint
+ansible_shell

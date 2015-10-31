@@ -2,5 +2,8 @@
 - name: Install pip packages
   pip:
     name: "{{ item.name }}"
-    state: "{{ item.state | default('present') }}"
-  with_items: pip_packages
+    virtualenv_command: pyenv
+    virtualenv_python: python2.7
+    state: present
+  with_items:
+    - pip_packages

@@ -92,12 +92,6 @@ homebrew_cask_packages:
   - { name: macvim }
   - { name: google-chrome }
 
-pip_packages:
-  - { name: flake8 }
-  - { name: ipython }
-  - { name: ansible_lint }
-  - { name: ansible_shell }
-
 gem_packages:
   - { name: rubocop }
   - { name: terminal-table }
@@ -115,3 +109,8 @@ git_repositories:
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
 
 pip_packages:
+  - { name: flake8 }
+  - { name: ipython }
+  - { name: ansible }
+  - { name: ansible_lint }
+  - { name: ansible_shell }
