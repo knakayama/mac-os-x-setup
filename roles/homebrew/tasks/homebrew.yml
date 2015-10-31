@@ -8,9 +8,9 @@
   changed_when: share_lib_result.stdout.find('root') != -1
 
 - name: Change /usr/local/{share,lib} owners
+  become: true
   shell: |
     chown $USER:staff /usr/local/share /usr/local/lib
-  sudo: yes
   when: share_lib_result|changed
 
 - name: Install homebrew
