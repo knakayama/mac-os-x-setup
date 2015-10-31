@@ -106,7 +106,7 @@ npm_packages:
   - { name: http-console }
 
 go_packages:
-  - { name: github.com/bfontaine/httpdoc }
+  - { name: httpdoc, path: github.com/bfontaine/httpdoc }
 
 git_repositories:
   - { repo: "https://github.com/knakayama/credentials.git", dest: ~/.ghq/github.com/knakayama/credentials }
@@ -114,5 +114,4 @@ git_repositories:
   - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
 
-go_packages:
-  - { name: httpdoc, path: github.com/bfontaine/httpdoc }
+pip_packages:
