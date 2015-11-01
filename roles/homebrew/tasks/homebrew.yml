@@ -23,7 +23,8 @@
   homebrew_tap:
     tap: "{{ item.name }}"
     state: present
-  with_items: homebrew_taps
+  with_items:
+    - "{{ homebrew_taps }}"
 
 - name: Update homebrew
   homebrew:
@@ -38,10 +39,12 @@
       if item.install_options is not string
       else item.install_options
     }}"
-  with_items: homebrew_packages
+  with_items:
+    - "{{ homebrew_packages }}"
 
 - name: Install homebrew cask packages
   homebrew_cask:
     name: "{{ item.name }}"
     state: "{{ item.state | default('installed') }}"
-  with_items: homebrew_cask_packages
+  with_items:
+    - "{{ homebrew_cask_packages }}"

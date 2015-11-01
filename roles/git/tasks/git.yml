@@ -3,7 +3,8 @@
   git:
     repo: "{{ item.repo }}"
     dest: "{{ item.dest }}"
-  with_items: git_repositories
+  with_items:
+    - "{{ git_repositories }}"
 
 - name: Setup my git repositories
   shell: |

@@ -4,4 +4,5 @@
     name: "{{ item.name }}"
     global: yes
     state: present
-  with_items: npm_packages
+  with_items:
+    - "{{ npm_packages }}"

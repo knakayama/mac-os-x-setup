@@ -4,4 +4,5 @@
     name: "{{ item.name }}"
     state: "{{ item.state | default('present') }}"
     executable: /Users/knakayama/.rbenv/shims/gem
-  with_items: gem_packages
+  with_items:
+    - "{{ gem_packages }}"
