@@ -113,5 +113,3 @@ git_repositories:
   - { repo: "git@github.com:knakayama/dotfiles.git", dest: ~/.ghq/github.com/knakayama/dotfiles }
   - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
-
-pip_packages:
