@@ -72,6 +72,7 @@ homebrew_packages:
   - { name: fpp }
   - { name: bash }
   - { name: antibody }
+  - { name: freetype }
 
 homebrew_cask_packages:
   - { name: avast }
@@ -97,6 +98,7 @@ pip_packages:
   - { name: ipython }
   - { name: ansible_lint }
   - { name: ansible_shell }
+  - { name: blockdiag }
 
 gem_packages:
   - { name: rubocop }
