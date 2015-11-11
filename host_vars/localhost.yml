@@ -109,6 +109,7 @@ npm_packages:
 
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
+  - { name: gommit-m, path: github.com/yuroyoro/gommit-m.git }
 
 git_repositories:
   - { repo: "https://github.com/knakayama/credentials.git", dest: ~/.ghq/github.com/knakayama/credentials }
