@@ -1,8 +1,10 @@
 ---
 - name: Clone tools
   git:
-    repo: git@github.com:apaszke/termtile.git
-    dest: ~/.ghq/github.com/apaszke/termtile
+    repo: "{{ item.repo }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - "{{ tools }}"
 
 - name: Install termtile
   shell: |
@@ -10,6 +12,12 @@
   args:
     chdir: ~/.ghq/github.com/apaszke/termtile
     creates: ~/.termtile/getScreenInfo
+
+- name: Install pwd.sh
+  file:
+    src: ~/.ghq/github.com/drduh/pwd.sh/pwd.sh
+    dest: /usr/local/bin/pwd.sh
+    state: link
 
 - name: Install translate-shell
   shell: |
