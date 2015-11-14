@@ -1,6 +1,6 @@
 ---
 - name: Check if login shell is /usr/local/bin/zsh
-  shell:
+  shell: |
     echo $SHELL
   register: res
   failed_when: no
