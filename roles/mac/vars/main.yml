@@ -10,6 +10,7 @@ osx_defaults:
     type: float
     value: 0
     notify: "Restart Dock"
+
   - domain: com.apple.finder
     key: FXPreferredViewStyle
     type: string
@@ -40,6 +41,7 @@ osx_defaults:
     type: string
     value: "file:///${HOME}/"
     notify: "Restart Finder"
+
   - domain: com.apple.menuextra.clock
     key: DateFormat
     type: string

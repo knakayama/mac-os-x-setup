@@ -47,7 +47,7 @@
     dest: /usr/local/bin/airport
     state: link
 
-# FIXME: hmm
+# FIXME: not work properly
 - name: Setup OS X defaults
   osx_defaults:
     domain: "{{ item.domain }}"
