@@ -40,3 +40,9 @@
   shell: |
     ln -sf ~/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml ~/Library/Application\ Support/Karabiner/private.xml && ./bin/karabiner.sh
   when: res|changed
+
+- name: Create symlink for airport
+  file:
+    src: /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
+    dest: /usr/local/bin/airport
+    state: link
