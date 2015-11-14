@@ -1,15 +1,15 @@
 ---
 homebrew_taps:
-  - { name: caskroom/cask }
-  - { name: homebrew/binary }
-  - { name: homebrew/dupes }
-  - { name: caskroom/fonts }
-  - { name: caskroom/versions }
-  - { name: sanemat/font }
-  - { name: kevwil/patches }
-  - { name: bfontaine/utils }
-  - { name: yudai/gotty }
-  - { name: caarlos0/antibody }
+  - { tap: caskroom/cask }
+  - { tap: homebrew/binary }
+  - { tap: homebrew/dupes }
+  - { tap: caskroom/fonts }
+  - { tap: caskroom/versions }
+  - { tap: sanemat/font }
+  - { tap: kevwil/patches }
+  - { tap: bfontaine/utils }
+  - { tap: yudai/gotty }
+  - { tap: caarlos0/antibody }
 
 homebrew_packages:
   - { name: brew-cask }
@@ -92,27 +92,3 @@ homebrew_cask_packages:
   - { name: packer }
   - { name: macvim }
   - { name: google-chrome }
-
-pip_packages:
-  - { name: flake8 }
-  - { name: ipython }
-  - { name: ansible_lint }
-  - { name: ansible_shell }
-  - { name: blockdiag }
-
-gem_packages:
-  - { name: rubocop }
-  - { name: terminal-table }
-
-npm_packages:
-  - { name: http-console }
-
-go_packages:
-  - { name: httpdoc, path: github.com/bfontaine/httpdoc }
-  - { name: gommit-m, path: github.com/yuroyoro/gommit-m.git }
-
-git_repositories:
-  - { repo: "https://github.com/knakayama/credentials.git", dest: ~/.ghq/github.com/knakayama/credentials }
-  - { repo: "git@github.com:knakayama/dotfiles.git", dest: ~/.ghq/github.com/knakayama/dotfiles }
-  - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
-  - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }

@@ -21,7 +21,7 @@
 
 - name: Add homebrew taps
   homebrew_tap:
-    tap: "{{ item.name }}"
+    tap: "{{ item.tap }}"
     state: present
   with_items:
     - "{{ homebrew_taps }}"

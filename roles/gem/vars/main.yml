@@ -1,0 +1,4 @@
+---
+gem_packages:
+  - { name: rubocop }
+  - { name: terminal-table }
