@@ -18,12 +18,6 @@ sudo softwareupdate --install --recommended
 4. Change Caps Lock to Control
 ```
 
-* Tweak date
-
-```text
-1. change date format to 24-hour style
-```
-
 * Tweak Display
 
 ```text
@@ -32,12 +26,6 @@ sudo softwareupdate --install --recommended
 3. Turn display off after 15m
 4. Open Display
 5. Max Brightness
-```
-
-* Tweak Dock
-
-```text
-1. check automaticaly hide and show the dock
 ```
 
 * Install Xcode
