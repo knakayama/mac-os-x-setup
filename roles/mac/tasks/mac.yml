@@ -38,6 +38,5 @@
 
 - name: Setup Karabiner
   shell: |
-    ln -sf ~/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml ~/Library/Application\ Support/Karabiner/private.xml
-    ./bin/karabiner.sh
+    ln -sf ~/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml ~/Library/Application\ Support/Karabiner/private.xml && ./bin/karabiner.sh
   when: res|changed
