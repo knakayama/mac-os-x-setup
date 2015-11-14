@@ -58,9 +58,10 @@ $ git clone https://github.com/knakayama/mac-os-x-setup ~/.ghq/github.com/knakay
 $ brew install pyenv pyenv-virtualenv
 $ pyenv install <python-version>
 $ pyenv global <python-version>
-$ pyenv virtualenv general-env-<python-version>
+$ pyenv virtualenv general-env
+$ pyenv activate general-env
 $ pip install ansible
-$ cd mac-os-x-setup
+$ cd ~/.ghq/github.com/knakaya/mac-os-x-setup
 $ ansible-playbook -i ./bin/hosts.py site.yml -vv
 ```
 
