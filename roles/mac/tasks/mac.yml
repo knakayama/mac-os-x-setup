@@ -3,49 +3,59 @@
   shell: |
     echo $SHELL
   register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.stdout.find('/usr/local/bin/zsh') != 0
+  failed_when: false
+  always_run: true
+  changed_when: res.stdout.find('/usr/local/bin/zsh') == -1
+  notify:
+    - Change login shell
 
-- name: Change login shell
-  become: true
+- name: Check if iterm2 config is differ
   shell: |
-    dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
-  when: res|changed
-
-- name: Check if iterm2 configurations are differ
-  shell: |
-    diff <(plutil -convert binary1 -o - ./assets/com.googlecode.iterm2.plist | md5 -q) <(md5 -q ~/Library/Preferences/com.googlecode.iterm2.plist)
+    diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q ~/Library/Preferences/com.googlecode.iterm2.plist)
   args:
+    chdir: roles/mac/files/Library/Preferences
     executable: /bin/bash
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
+  register: diff_result
+  always_run: true
+  failed_when: false
+  changed_when: diff_result.rc != 0
+  notify:
+    - Restore iterm2 configuration
 
-- name: Restore iterm2 configuration
-  shell: |
-    plutil -convert binary1 -o ~/Library/Preferences/com.googlecode.iterm2.plist ./assets/com.googlecode.iterm2.plist
-  when: res|changed
-
-- name: Check if karabiner configuration exists
-  shell: |
-    test -f ~/Library/Application\ Support/Karabiner/private.xml
-  register: res
-  failed_when: no
-  always_run: yes
-  changed_when: res.rc != 0
-
-- name: Setup Karabiner
-  shell: |
-    ln -sf ~/.ghq/github.com/knakayama/mac-os-x-setup/assets/private.xml ~/Library/Application\ Support/Karabiner/private.xml && ./bin/karabiner.sh
-  when: res|changed
+- name: Copy Karabiner private.xml
+  file:
+    src: "~/.ghq/github.com/knakayama/mac-os-x-setup/roles/mac/files/Library/Application\ Support/Karabiner/private.xml"
+    dest: "~/Library/Application\ Support/Karabiner/private.xml"
+    state: link
+  notify:
+    - Setup Karabiner
 
 - name: Create symlink for airport
   file:
     src: /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport
     dest: /usr/local/bin/airport
     state: link
+
+- name: Copy local.knakayama.compresstmuxlog.plist
+  become: true
+  template:
+    src: Library/LaunchAgents/local.knakayama.compresstmuxlog.plist.j2
+    dest: "{{ ansible_user_dir }}/Library/LaunchAgents/local.compresstmuxlog.plist"
+    owner: root
+    group: staff
+    mode: 0644
+  notify:
+    - Setup launchd for compressing tmux logs
+
+- name: Check if compressing tmux log launchd exists
+  shell: |
+    launchctl list
+  register: launchctl_result
+  always_run: true
+  failed_when: false
+  changed_when: launchctl_result.stdout.find('compresstmuxlog') == -1
+  notify:
+    - Setup launchd for compressing tmux logs
 
 # FIXME: not work properly
 - name: Setup OS X defaults
