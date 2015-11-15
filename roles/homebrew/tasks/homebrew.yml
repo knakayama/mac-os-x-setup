@@ -1,17 +1,13 @@
 ---
-- name: Check if /usr/local/{share,lib} owners
-  shell: |
-    ls -ld /usr/local/share /usr/local/lib
-  register: share_lib_result
-  failed_when: no
-  always_run: yes
-  changed_when: share_lib_result.stdout.find('root') != -1
-
-- name: Change /usr/local/{share,lib} owners
-  become: true
-  shell: |
-    chown $USER:staff /usr/local/share /usr/local/lib
-  when: share_lib_result|changed
+- name: Check if /usr/local owners
+  stat:
+    path: /usr/local
+  register: res
+  always_run: true
+  failed_when: false
+  changed_when: res.stat.pw_name != '{{ ansible_user_id }}'
+  notify:
+    - Change /usr/local owners
 
 - name: Install homebrew
   shell: |
