@@ -2,5 +2,5 @@
 git_repositories:
   - { repo: "https://github.com/knakayama/credentials.git", dest: ~/.ghq/github.com/knakayama/credentials }
   - { repo: "git@github.com:knakayama/dotfiles.git", dest: ~/.ghq/github.com/knakayama/dotfiles }
-  - { repo: "https://github.com/Shougo/neobundle.vim", dest: ~/.vim/bundle/neobundle.vim }
-  - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
+  - { repo: "git@github.com:Shougo/neobundle.vim.git", dest: ~/.vim/bundle/neobundle.vim }
+  - { repo: "git@github.com:tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
