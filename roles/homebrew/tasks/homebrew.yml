@@ -6,8 +6,12 @@
   always_run: true
   failed_when: false
   changed_when: res.stat.pw_name != '{{ ansible_user_id }}'
-  notify:
-    - Change /usr/local owners
+
+- name: Change /usr/local owners
+  become: true
+  shell: |
+    chown -R {{ ansible_user_id }}:admin /usr/local
+  when: res|changed
 
 - name: Install homebrew
   shell: |

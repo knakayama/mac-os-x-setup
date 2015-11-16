@@ -1,5 +1,0 @@
----
-- name: Change /usr/local owners
-  become: true
-  shell: |
-    chown -R {{ ansible_user_id }}:admin /usr/local
