@@ -73,6 +73,7 @@ homebrew_packages:
   - { name: bash }
   - { name: antibody }
   - { name: freetype }
+  - { name: procmail }
 
 homebrew_cask_packages:
   - { name: avast }
