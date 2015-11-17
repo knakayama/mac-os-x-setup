@@ -10,6 +10,7 @@ homebrew_taps:
   - { tap: bfontaine/utils }
   - { tap: yudai/gotty }
   - { tap: caarlos0/antibody }
+  - { tap: yamamoto-febc/docker-machine-sakuracloud }
 
 homebrew_packages:
   - { name: brew-cask }
@@ -74,6 +75,7 @@ homebrew_packages:
   - { name: antibody }
   - { name: freetype }
   - { name: procmail }
+  - { name: docker-machine-sakuracloud }
 
 homebrew_cask_packages:
   - { name: avast }
@@ -91,5 +93,6 @@ homebrew_cask_packages:
   - { name: gimp }
   - { name: terraform }
   - { name: packer }
+  - { name: dockertoolbox }
   - { name: macvim }
   - { name: google-chrome }
