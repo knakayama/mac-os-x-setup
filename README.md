@@ -81,12 +81,10 @@ $ ansible-playbook -i ./bin/hosts.py site.yml -vv
 
 * Enable ssh login (Optional)
 
-```text
-1. Open System Preferences
-2. Open Sharing
-3. Enable remote login
-4. Only enable system user
-5. Edit /private/etc/sshd_config
+Edit `/private/etc/sshd_config`, then
+
+```bash
+$ sudo launchctl load /System/Library/LaunchDaemons/ssh.plist
 ```
 
 * Setup Network (Optional)
