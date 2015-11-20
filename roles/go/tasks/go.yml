@@ -3,6 +3,6 @@
   shell: |
     go get {{ item.path }}
   args:
-    creates: ~/go/vendor/bin/{{ item.name }}
+    creates: ~/.go/bin/{{ item.name }}
   with_items:
     - "{{ go_packages }}"
