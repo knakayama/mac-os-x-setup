@@ -2,3 +2,4 @@
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
   - { name: gommit-m, path: github.com/yuroyoro/gommit-m.git }
+  - { name: gore, path: github.com/motemen/gore }
