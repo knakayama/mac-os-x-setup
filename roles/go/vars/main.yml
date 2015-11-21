@@ -3,3 +3,4 @@ go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
   - { name: gommit-m, path: github.com/yuroyoro/gommit-m }
   - { name: gore, path: github.com/motemen/gore }
+  - { name: getool, path: github.com/garyburd/go-explorer/src/getool }
