@@ -1,4 +1,4 @@
 ---
 tools:
-  - { repo: "git@github.com:apaszke/termtile.git", dest: ~/.ghq/github.com/apaszke/termtile }
-  - { repo: "git@github.com:drduh/pwd.sh.git", dest: ~/.ghq/github.com/drduh/pwd.sh }
+  - { repo: "https://github.com/apaszke/termtile.git", dest: ~/.ghq/github.com/apaszke/termtile }
+  - { repo: "https://github.com/drduh/pwd.sh.git", dest: ~/.ghq/github.com/drduh/pwd.sh }
