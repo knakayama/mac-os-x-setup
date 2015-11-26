@@ -55,7 +55,6 @@ homebrew_packages:
   - { name: pyenv-virtualenv }
   - { name: plenv }
   - { name: perl-build }
-  - { name: awscli }
   - { name: gpg }
   - { name: msmtp }
   - { name: getmail }
