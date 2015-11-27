@@ -6,3 +6,4 @@ pip_packages:
   - { name: ansible_shell }
   - { name: blockdiag }
   - { name: awscli }
+  - { name: awsebcli }
