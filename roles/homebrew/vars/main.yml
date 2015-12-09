@@ -8,7 +8,6 @@ homebrew_taps:
   - { tap: sanemat/font }
   - { tap: kevwil/patches }
   - { tap: bfontaine/utils }
-  - { tap: yudai/gotty }
   - { tap: caarlos0/antibody }
   - { tap: yamamoto-febc/docker-machine-sakuracloud }
 
@@ -65,7 +64,6 @@ homebrew_packages:
   - { name: rfc }
   - { name: mobile-shell }
   - { name: xhyve }
-  - { name: gotty }
   - { name: ricty }
   - { name: mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
   - { name: npm }
