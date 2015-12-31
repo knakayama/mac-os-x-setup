@@ -2,3 +2,4 @@
 tools:
   - { repo: "https://github.com/apaszke/termtile.git", dest: ~/.ghq/github.com/apaszke/termtile }
   - { repo: "https://github.com/drduh/pwd.sh.git", dest: ~/.ghq/github.com/drduh/pwd.sh }
+  - { repo: "https://github.com/awslabs/git-secrets.git", dest: ~/.ghq/github.com/awslabs/git-secrets }

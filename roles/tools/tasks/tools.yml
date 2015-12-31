@@ -24,3 +24,10 @@
     brew install http://www.soimort.org/translate-shell/translate-shell.rb
   args:
     creates: /usr/local/bin/trans
+
+- name: Install git-secrets
+  shell: |
+    make install
+  args:
+    chdir: ~/.ghq/github.com/awslabs/git-secrets
+    creates: /usr/local/bin/git-secrets
