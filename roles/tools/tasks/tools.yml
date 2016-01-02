@@ -31,3 +31,11 @@
   args:
     chdir: ~/.ghq/github.com/awslabs/git-secrets
     creates: /usr/local/bin/git-secrets
+
+- name: Install hashicorp cli completions
+  get_url:
+    url: "{{ item.url }}"
+    dest: "~/.zsh/completions/{{ item.dest }}"
+    mode: 0644
+  with_items:
+    - "{{ hashicorp_tools }}"
