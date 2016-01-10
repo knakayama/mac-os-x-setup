@@ -92,3 +92,4 @@ homebrew_cask_packages:
   - { name: dockertoolbox }
   - { name: macvim }
   - { name: google-chrome }
+  - { name: slack }
