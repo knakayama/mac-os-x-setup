@@ -2,6 +2,7 @@
 pip_packages:
   - { name: flake8 }
   - { name: ipython }
+  - { name: ansible }
   - { name: ansible_lint }
   - { name: ansible_shell }
   - { name: blockdiag }

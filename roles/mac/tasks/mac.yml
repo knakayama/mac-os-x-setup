@@ -57,15 +57,3 @@
   notify:
     - Setup launchd for compressing tmux logs
 
-# FIXME: not work properly
-- name: Setup OS X defaults
-  osx_defaults:
-    domain: "{{ item.domain }}"
-    key: "{{ item.key }}"
-    type: "{{ item.type }}"
-    value: "{{ item.value }}"
-    state: present
-  notify:
-    - "{{ item.notify | default(omit) }}"
-  with_items:
-    - "{{ osx_defaults }}"

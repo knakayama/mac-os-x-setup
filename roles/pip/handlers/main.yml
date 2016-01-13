@@ -1,4 +1,0 @@
----
-- name: Rehash pyenv
-  shell: |
-    pyenv rehash
