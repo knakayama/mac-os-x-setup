@@ -6,6 +6,7 @@ pip_packages:
   - { name: ansible_lint }
   - { name: ansible_shell }
   - { name: blockdiag }
+  - { name: nwdiag }
   - { name: awscli }
   - { name: awsebcli }
   - { name: aws-shell }

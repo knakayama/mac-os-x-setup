@@ -56,4 +56,3 @@
   changed_when: launchctl_result.stdout.find('compresstmuxlog') == -1
   notify:
     - Setup launchd for compressing tmux logs
-
