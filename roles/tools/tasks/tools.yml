@@ -19,12 +19,6 @@
     dest: /usr/local/bin/pwd.sh
     state: link
 
-- name: Install translate-shell
-  shell: |
-    brew install http://www.soimort.org/translate-shell/translate-shell.rb
-  args:
-    creates: /usr/local/bin/trans
-
 - name: Install git-secrets
   shell: |
     make install
