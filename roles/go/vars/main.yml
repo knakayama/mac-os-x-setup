@@ -6,3 +6,4 @@ go_packages:
   - { name: getool, path: github.com/garyburd/go-explorer/src/getool }
   - { name: gotty, path: github.com/yudai/gotty }
   - { name: ghs, path: github.com/sona-tar/ghs }
+  - { name: ghdump, path: github.com/knakayama/ghdump }
