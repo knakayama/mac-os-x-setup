@@ -5,3 +5,5 @@
     state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ pip_packages }}"
+  notify:
+    - Rehash pyenv
