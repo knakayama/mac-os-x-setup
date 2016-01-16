@@ -30,6 +30,5 @@
   get_url:
     url: "{{ item.url }}"
     dest: "~/.zsh/completions/{{ item.dest }}"
-    mode: 0644
   with_items:
     - "{{ hashicorp_tools }}"
