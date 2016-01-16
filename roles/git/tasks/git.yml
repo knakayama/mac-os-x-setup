@@ -13,5 +13,4 @@
     chdir: "{{ item.chdir }}"
     creates: "{{ item.creates }}"
   with_items:
-    - { chdir: ~/.ghq/github.com/knakayama/credentials, creates: ~/.msmtprc }
-    - { chdir: ~/.ghq/github.com/knakayama/dotfiles, creates: ~/.vimrc }
+    - "{{ setup_repositories }}"
