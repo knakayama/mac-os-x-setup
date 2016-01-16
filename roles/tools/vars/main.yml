@@ -7,3 +7,4 @@ tools:
 hashicorp_tools:
   - { url: "https://raw.githubusercontent.com/hashicorp/terraform/master/contrib/zsh-completion/_terraform", dest: _terraform }
   - { url: "https://raw.githubusercontent.com/mitchellh/packer/master/contrib/zsh-completion/_packer", dest: _packer }
+  - { url: "https://raw.githubusercontent.com/hashicorp/consul/master/contrib/zsh-completion/_consul", dest: _consul }
