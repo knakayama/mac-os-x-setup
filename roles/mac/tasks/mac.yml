@@ -30,7 +30,7 @@
   notify:
     - Setup Karabiner
 
-- name: Create symlink for airport
+- name: Create alias symlink
   file:
     src: "{{ item.src }}"
     dest: "/usr/local/bin/{{ item.dest }}"
@@ -39,7 +39,7 @@
     - "{{ symlinks }}"
 
 - name: Copy local.knakayama.compresstmuxlog.plist
-  become: true
+  become: yes
   template:
     src: Library/LaunchAgents/local.knakayama.compresstmuxlog.plist.j2
     dest: "{{ ansible_user_dir }}/Library/LaunchAgents/local.compresstmuxlog.plist"
