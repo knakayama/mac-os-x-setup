@@ -1,7 +1,7 @@
 ---
 - name: Install ricty fonts
   shell: |
-    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts
+    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_id }}/Library/Fonts"
   args:
-    creates: ~/Library/Fonts/Ricty-Bold.ttf
+    creates: "{{ ansible_user_id }}/Library/Fonts/Ricty-Bold.ttf"
   notify: Run fc-cache

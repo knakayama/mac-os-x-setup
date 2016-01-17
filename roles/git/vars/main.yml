@@ -1,10 +1,10 @@
 ---
 git_repositories:
-  - { repo: "https://github.com/knakayama/credentials.git", dest: ~/.ghq/github.com/knakayama/credentials }
-  - { repo: "https://github.com/knakayama/dotfiles.git", dest: ~/.ghq/github.com/knakayama/dotfiles }
-  - { repo: "https://github.com/Shougo/neobundle.vim.git", dest: ~/.vim/bundle/neobundle.vim }
-  - { repo: "https://github.com/tmux-plugins/tpm.git", dest: ~/.tmux/plugins/tpm }
+  - { repo: "https://github.com/knakayama/credentials.git", dest: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials" }
+  - { repo: "https://github.com/knakayama/dotfiles.git", dest: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/dotfiles" }
+  - { repo: "https://github.com/Shougo/neobundle.vim.git", dest: "{{ ansible_user_dir }}/.vim/bundle/neobundle.vim" }
+  - { repo: "https://github.com/tmux-plugins/tpm.git", dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm" }
 
 setup_repositories:
-  - { chdir: ~/.ghq/github.com/knakayama/credentials, creates: ~/.msmtprc }
-  - { chdir: ~/.ghq/github.com/knakayama/dotfiles, creates: ~/.vimrc }
+  - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
+  - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/dotfiles", creates: "{{ ansible_user_dir }}/.vimrc" }

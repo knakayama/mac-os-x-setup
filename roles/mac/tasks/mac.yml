@@ -11,7 +11,7 @@
 
 - name: Check if iterm2 config is differ
   shell: |
-    diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q ~/Library/Preferences/com.googlecode.iterm2.plist)
+    diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q "{{ ansible_user_dir }}/Library/Preferences/com.googlecode.iterm2.plist")
   args:
     chdir: roles/mac/files/Library/Preferences
     executable: /bin/bash
@@ -24,8 +24,8 @@
 
 - name: Copy Karabiner private.xml
   file:
-    src: "~/.ghq/github.com/knakayama/mac-os-x-setup/roles/mac/files/Library/Application\ Support/Karabiner/private.xml"
-    dest: "~/Library/Application\ Support/Karabiner/private.xml"
+    src: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/mac-os-x-setup/roles/mac/files/Library/Application\ Support/Karabiner/private.xml"
+    dest: "{{ ansible_user_dir }}/Library/Application\ Support/Karabiner/private.xml"
     state: link
   notify:
     - Setup Karabiner

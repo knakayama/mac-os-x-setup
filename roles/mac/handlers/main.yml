@@ -15,7 +15,7 @@
 
 - name: Restore iterm2 configuration
   shell: |
-    plutil -convert binary1 -o ~/Library/Preferences/com.googlecode.iterm2.plist ./com.googlecode.iterm2.plist
+    plutil -convert binary1 -o "{{ ansible_user_dir }}/Library/Preferences/com.googlecode.iterm2.plist" ./com.googlecode.iterm2.plist
   args:
     chdir: roles/mac/files/Library/Preferences
 
