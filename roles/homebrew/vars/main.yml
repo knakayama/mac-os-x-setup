@@ -89,6 +89,7 @@ homebrew_cask_packages:
   - { name: terraform }
   - { name: packer }
   - { name: consul }
+  - { name: vault }
   - { name: dockertoolbox }
   - { name: macvim }
   - { name: google-chrome }
