@@ -3,6 +3,6 @@
   gem:
     name: "{{ item.name }}"
     state: "{{ item.state | default('present') }}"
-    executable: /Users/knakayama/.rbenv/shims/gem
+    executable: "{{ ansible_user_dir }}/.rbenv/shims/gem"
   with_items:
     - "{{ gem_packages }}"
