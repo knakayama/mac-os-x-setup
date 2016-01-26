@@ -10,3 +10,4 @@ pip_packages:
   - { name: awscli }
   - { name: awsebcli }
   - { name: aws-shell }
+  - { name: boto3 }
