@@ -34,6 +34,12 @@ sudo softwareupdate --install --recommended
 $ xcode-select --install
 ```
 
+* Install [homebrew](http://brew.sh/)
+
+```bash
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 * Clone [my mac os x setup repository](https://github.com/knakayama/mac-os-x-setup)
 
 ```bash
