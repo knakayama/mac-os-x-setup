@@ -5,6 +5,7 @@ pip_packages:
   - { name: ansible }
   - { name: ansible_lint }
   - { name: ansible_shell }
+  - { name: sphinx }
   - { name: blockdiag }
   - { name: nwdiag }
   - { name: awscli }
