@@ -41,6 +41,6 @@
 - name: Install homebrew cask packages
   homebrew_cask:
     name: "{{ item.name }}"
-    state: "{{ item.state | default('installed') }}"
+    state: "{{ item.state | default('present') }}"
   with_items:
     - "{{ homebrew_cask_packages }}"
