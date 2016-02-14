@@ -12,3 +12,4 @@ pip_packages:
   - { name: awsebcli }
   - { name: aws-shell }
   - { name: boto3 }
+  - { name: watchdog }
