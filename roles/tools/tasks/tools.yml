@@ -10,12 +10,12 @@
   shell: |
     ./install.sh yes
   args:
-    chdir: "{{ ansible_user_dir }}/.ghq/github.com/apaszke/termtile"
+    chdir: "{{ ghq_root }}/apaszke/termtile"
     creates: "{{ ansible_user_dir }}/.termtile/getScreenInfo"
 
 - name: Install pwd.sh
   file:
-    src: "{{ ansible_user_dir }}/.ghq/github.com/drduh/pwd.sh/pwd.sh"
+    src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh"
     dest: /usr/local/bin/pwd.sh
     state: link
 
@@ -23,12 +23,13 @@
   shell: |
     make install
   args:
-    chdir: "{{ ansible_user_dir }}/.ghq/github.com/awslabs/git-secrets"
+    chdir: "{{ ghq_root }}/awslabs/git-secrets"
     creates: /usr/local/bin/git-secrets
 
-- name: Install hashicorp cli completions
-  get_url:
-    url: "{{ item.url }}"
+- name: Symlink for zsh completions
+  file:
+    src: "{{ item.src }}"
     dest: "{{ ansible_user_dir }}/.zsh/completions/{{ item.dest }}"
+    state: link
   with_items:
-    - "{{ hashicorp_tools }}"
+    - "{{ zsh_completions }}"
