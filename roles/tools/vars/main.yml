@@ -1,5 +1,6 @@
 ---
 ghq_root: "{{ ansible_user_dir }}/.ghq/github.com"
+zsh_completion_dir: "{{ ansible_user_dir }}/.zsh/completions"
 
 tools:
   - { repo: "https://github.com/apaszke/termtile.git", dest: "{{ ghq_root }}/apaszke/termtile" }
@@ -9,8 +10,11 @@ tools:
   - { repo: "https://github.com/mitchellh/packer.git", dest: "{{ ghq_root }}/hashicorp/packer" }
   - { repo: "https://github.com/hashicorp/consul.git", dest: "{{ ghq_root }}/hashicorp/consul" }
 
-zsh_completions:
-  - { src: "{{ ghq_root }}/hashicorp/terraform/contrib/zsh-completion/_terraform", dest: _terraform }
-  - { src: "{{ ghq_root }}/hashicorp/packer/contrib/zsh-completion/_packer", dest: _packer }
-  - { src: "{{ ghq_root }}/hashicorp/consul/contrib/zsh-completion/_consul", dest: _consul }
+symlinks:
+  - { src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh", dest: /usr/local/bin/pwd.sh }
+  - { src: "{{ ghq_root }}/awslabs/git-secrets/git-secrets", dest: /usr/local/bin/git-secrets }
+  - { src: "{{ ghq_root }}/awslabs/git-secrets/git-secrets.1", dest: /usr/local/share/man/man1/git-secrets.1 }
+  - { src: "{{ ghq_root }}/hashicorp/terraform/contrib/zsh-completion/_terraform", dest: "{{ zsh_completion_dir }}/_terraform" }
+  - { src: "{{ ghq_root }}/hashicorp/packer/contrib/zsh-completion/_packer", dest: "{{ zsh_completion_dir }}/_packer" }
+  - { src: "{{ ghq_root }}/hashicorp/consul/contrib/zsh-completion/_consul", dest: "{{ zsh_completion_dir }}/_consul" }
 

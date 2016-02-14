@@ -13,23 +13,10 @@
     chdir: "{{ ghq_root }}/apaszke/termtile"
     creates: "{{ ansible_user_dir }}/.termtile/getScreenInfo"
 
-- name: Install pwd.sh
-  file:
-    src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh"
-    dest: /usr/local/bin/pwd.sh
-    state: link
-
-- name: Install git-secrets
-  shell: |
-    make install
-  args:
-    chdir: "{{ ghq_root }}/awslabs/git-secrets"
-    creates: /usr/local/bin/git-secrets
-
-- name: Symlink for zsh completions
+- name: Create symlinks
   file:
     src: "{{ item.src }}"
-    dest: "{{ ansible_user_dir }}/.zsh/completions/{{ item.dest }}"
+    dest: "{{ item.dest }}"
     state: link
   with_items:
-    - "{{ zsh_completions }}"
+    - "{{ symlinks }}"
