@@ -14,3 +14,18 @@
     creates: "{{ item.creates }}"
   with_items:
     - "{{ setup_repositories }}"
+
+- name: Install termtile
+  shell: |
+    ./install.sh yes
+  args:
+    chdir: "{{ ghq_root }}/apaszke/termtile"
+    creates: "{{ ansible_user_dir }}/.termtile/getScreenInfo"
+
+- name: Create symlinks
+  file:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+    state: link
+  with_items:
+    - "{{ symlinks }}"
