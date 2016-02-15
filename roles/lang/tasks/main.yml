@@ -1,0 +1,16 @@
+---
+- include: gem.yml
+  tags:
+    - gem
+
+- include: go.yml
+  tags:
+    - go
+
+- include: pip.yml
+  tags:
+    - pip
+
+- include: npm.yml
+  tags:
+    - npm

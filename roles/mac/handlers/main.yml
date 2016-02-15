@@ -28,3 +28,7 @@
   become: true
   shell: |
     launchctl load "{{ ansible_user_dir }}/Library/LaunchAgents/local.compresstmuxlog.plist"
+
+- name: Run fc-cache
+  shell: |
+    fc-cache -vf

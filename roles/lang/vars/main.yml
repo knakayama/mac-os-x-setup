@@ -1,4 +1,9 @@
 ---
+gem_packages:
+  - { name: rubocop }
+  - { name: terminal-table }
+  - { name: bundler }
+
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
   - { name: gommit-m, path: github.com/yuroyoro/gommit-m }
@@ -8,3 +13,21 @@ go_packages:
   - { name: ghs, path: github.com/sona-tar/ghs }
   - { name: ghdump, path: github.com/knakayama/ghdump }
   - { name: assh, path: github.com/moul/advanced-ssh-config/cmd/assh }
+
+npm_packages:
+  - { name: http-console }
+
+pip_packages:
+  - { name: flake8 }
+  - { name: ipython }
+  - { name: ansible }
+  - { name: ansible_lint }
+  - { name: ansible_shell }
+  - { name: sphinx }
+  - { name: blockdiag }
+  - { name: nwdiag }
+  - { name: awscli }
+  - { name: awsebcli }
+  - { name: aws-shell }
+  - { name: boto3 }
+  - { name: watchdog }

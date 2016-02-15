@@ -5,10 +5,5 @@
   roles:
     - { role: homebrew, tags: [ homebrew ] }
     - { role: git,      tags: [ git ] }
-    - { role: gem,      tags: [ gem ] }
-    - { role: go,       tags: [ go ] }
-    - { role: npm,      tags: [ npm ] }
-    - { role: pip,      tags: [ pip ] }
-    - { role: tools,    tags: [ tools ] }
-    - { role: ricty,    tags: [ ricty ] }
+    - { role: lang,     tags: [ lang ] }
     - { role: mac,      tags: [ mac ] }
