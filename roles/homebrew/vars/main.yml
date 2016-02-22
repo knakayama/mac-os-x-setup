@@ -72,6 +72,7 @@ homebrew_packages:
   - { name: procmail }
   - { name: argon/mas/mas }
   - { name: watch }
+  - { name: unar }
 
 homebrew_cask_packages:
   - { name: avast }
