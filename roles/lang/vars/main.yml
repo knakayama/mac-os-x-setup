@@ -31,3 +31,4 @@ pip_packages:
   - { name: aws-shell }
   - { name: boto3 }
   - { name: watchdog }
+  - { name: s4cmd }
