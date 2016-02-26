@@ -75,24 +75,24 @@ homebrew_packages:
   - { name: unar }
 
 homebrew_cask_packages:
-  - { name: avast }
-  - { name: iterm2 }
-  - { name: firefox }
-  - { name: google-japanese-ime }
-  - { name: java }
-  - { name: karabiner }
-  - { name: vagrant }
-  - { name: virtualbox }
-  - { name: kindle }
-  - { name: xquartz }
-  - { name: alfred }
-  - { name: shiftit }
-  - { name: gimp }
-  - { name: terraform }
-  - { name: packer }
-  - { name: consul }
-  - { name: vault }
-  - { name: dockertoolbox }
-  - { name: macvim }
-  - { name: google-chrome }
-  - { name: slack }
+  - { name: Caskroom/cask/avast, state: present }
+  - { name: Caskroom/cask/iterm2, state: present }
+  - { name: Caskroom/cask/firefox, state: present }
+  - { name: Caskroom/cask/google-japanese-ime, state: present }
+  - { name: Caskroom/cask/java, state: present }
+  - { name: Caskroom/cask/karabiner, state: present }
+  - { name: Caskroom/cask/vagrant, state: present }
+  - { name: Caskroom/cask/virtualbox, state: present }
+  - { name: Caskroom/cask/kindle, state: present }
+  - { name: Caskroom/cask/xquartz, state: present }
+  - { name: Caskroom/cask/alfred, state: present }
+  - { name: Caskroom/cask/shiftit, state: present }
+  - { name: Caskroom/cask/gimp, state: present }
+  - { name: Caskroom/cask/terraform, state: present }
+  - { name: Caskroom/cask/packer, state: present }
+  - { name: Caskroom/cask/consul, state: present }
+  - { name: Caskroom/cask/vault, state: present }
+  - { name: Caskroom/cask/dockertoolbox, state: present }
+  - { name: Caskroom/cask/macvim, state: present }
+  - { name: Caskroom/cask/google-chrome, state: present }
+  - { name: Caskroom/cask/slack, state: present }
