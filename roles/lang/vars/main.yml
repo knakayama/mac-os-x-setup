@@ -3,6 +3,7 @@ gem_packages:
   - { name: rubocop }
   - { name: terminal-table }
   - { name: bundler }
+  - { name: pry }
 
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
