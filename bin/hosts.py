@@ -15,7 +15,7 @@ def main():
         },
         '_meta': {
             'hostvars': {
-                'localhost': {
+                '127.0.0.1': {
                     'ansible_python_interpreter': python_interp,
                     'ansible_user_dir': os.environ['HOME'],
                     'ansible_user_id': os.environ['USER']
