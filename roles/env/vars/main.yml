@@ -13,6 +13,7 @@ git_repositories:
   - { repo: "https://github.com/hashicorp/terraform.git", dest: "{{ ghq_root }}/hashicorp/terraform" }
   - { repo: "https://github.com/mitchellh/packer.git", dest: "{{ ghq_root }}/hashicorp/packer" }
   - { repo: "https://github.com/hashicorp/consul.git", dest: "{{ ghq_root }}/hashicorp/consul" }
+  - { repo: "https://github.com/pda/aws-keychain.git", dest: "{{ ghq_root }}/pda/aws-keychain" }
 
 symlinks:
   - { src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh", dest: /usr/local/bin/pwd.sh }
@@ -21,6 +22,8 @@ symlinks:
   - { src: "{{ ghq_root }}/hashicorp/terraform/contrib/zsh-completion/_terraform", dest: "{{ zsh_completion_dir }}/_terraform" }
   - { src: "{{ ghq_root }}/hashicorp/packer/contrib/zsh-completion/_packer", dest: "{{ zsh_completion_dir }}/_packer" }
   - { src: "{{ ghq_root }}/hashicorp/consul/contrib/zsh-completion/_consul", dest: "{{ zsh_completion_dir }}/_consul" }
+  - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain", dest: /usr/local/bin/aws-keychain }
+  - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain-completion.zsh", dest: "{{ zsh_completion_dir }}/_aws-keychain-completion" }
 
 setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
