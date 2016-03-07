@@ -73,6 +73,7 @@ homebrew_packages:
   - { name: argon/mas/mas }
   - { name: watch }
   - { name: unar }
+  - { name: awscli }
 
 homebrew_cask_packages:
   - { name: Caskroom/cask/avast, state: present }
