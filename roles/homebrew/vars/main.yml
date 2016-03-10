@@ -9,6 +9,7 @@ homebrew_taps:
   - { tap: kevwil/patches }
   - { tap: bfontaine/utils }
   - { tap: caarlos0/antibody }
+  - { tap: caius/jo }
 
 homebrew_packages:
   - { name: brew-cask }
@@ -74,6 +75,7 @@ homebrew_packages:
   - { name: watch }
   - { name: unar }
   - { name: awscli }
+  - { name: jo }
 
 homebrew_cask_packages:
   - { name: Caskroom/cask/avast, state: present }
