@@ -28,3 +28,6 @@ symlinks:
 setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/dotfiles", creates: "{{ ansible_user_dir }}/.vimrc" }
+
+dbcli_version: v0.1.1
+dbcli_url: "https://github.com/dropbox/dbxcli/releases/download/{{ dbcli_version }}/dbxcli_darwin_amd64"
