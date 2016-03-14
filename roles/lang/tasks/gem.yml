@@ -2,7 +2,8 @@
 - name: Install gem pacakges
   gem:
     name: "{{ item.name }}"
-    state: "{{ item.state | default('present') }}"
+    include_doc: yes
     executable: "{{ ansible_user_dir }}/.rbenv/shims/gem"
+    state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ gem_packages }}"
