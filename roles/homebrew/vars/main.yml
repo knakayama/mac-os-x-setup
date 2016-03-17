@@ -76,6 +76,7 @@ homebrew_packages:
   - { name: unar }
   - { name: awscli }
   - { name: jo }
+  - { name: redpen }
 
 homebrew_cask_packages:
   - { name: Caskroom/cask/avast, state: present }
