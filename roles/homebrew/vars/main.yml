@@ -48,6 +48,7 @@ homebrew_packages:
   - { name: xz }
   - { name: lua }
   - { name: vim, install_options: with-lua }
+  - { name: neovim/neovim/neovim }
   - { name: rsense }
   - { name: pyenv }
   - { name: pyenv-virtualenv }
