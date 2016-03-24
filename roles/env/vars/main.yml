@@ -31,5 +31,4 @@ setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/dotfiles", creates: "{{ ansible_user_dir }}/.vimrc" }
 
-dbxcli_version: v0.1.1
-dbxcli_url: "https://github.com/dropbox/dbxcli/releases/download/{{ dbxcli_version }}/dbxcli_darwin_amd64"
+dbxcli_url: "https://github.com/dropbox/dbxcli/releases/download"
