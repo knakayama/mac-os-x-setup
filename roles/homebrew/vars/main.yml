@@ -21,6 +21,7 @@ homebrew_packages:
   - { name: readline }
   - { name: openssl }
   - { name: python }
+  - { name: python3 }
   - { name: coreutils }
   - { name: git }
   - { name: zsh, install_options: disable-etcdir }
