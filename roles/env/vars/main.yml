@@ -7,7 +7,6 @@ git_repositories:
   - { repo: "https://github.com/knakayama/dotfiles.git", dest: "{{ ghq_root }}/knakayama/dotfiles" }
   - { repo: "https://github.com/Shougo/neobundle.vim.git", dest: "{{ ansible_user_dir }}/.vim/bundle/neobundle.vim" }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm" }
-  - { repo: "https://github.com/apaszke/termtile.git", dest: "{{ ghq_root }}/apaszke/termtile" }
   - { repo: "https://github.com/drduh/pwd.sh.git", dest: "{{ ghq_root }}/drduh/pwd.sh" }
   - { repo: "https://github.com/awslabs/git-secrets.git", dest: "{{ ghq_root }}/awslabs/git-secrets" }
   - { repo: "https://github.com/hashicorp/terraform.git", dest: "{{ ghq_root }}/hashicorp/terraform" }
