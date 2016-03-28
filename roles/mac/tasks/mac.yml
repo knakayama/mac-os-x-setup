@@ -64,4 +64,5 @@
     cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_id }}/Library/Fonts"
   args:
     creates: "{{ ansible_user_id }}/Library/Fonts/Ricty-Bold.ttf"
-  notify: Run fc-cache
+  notify:
+    - Run fc-cache
