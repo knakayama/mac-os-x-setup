@@ -19,11 +19,6 @@
   args:
     chdir: roles/mac/files/Library/Preferences
 
-- name: Change login shell
-  become: true
-  shell: |
-    dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
-
 - name: Setup launchd for compressing tmux logs
   become: true
   shell: |

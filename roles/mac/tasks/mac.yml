@@ -1,13 +1,8 @@
 ---
-- name: Check if login shell is /usr/local/bin/zsh
-  shell: |
-    echo $SHELL
-  register: res
-  failed_when: false
-  always_run: true
-  changed_when: res.stdout.find('/usr/local/bin/zsh') == -1
-  notify:
-    - Change login shell
+- name: Change login shell to /usr/local/bin/zsh
+  user:
+    name: "{{ ansible_user_id }}"
+    shell: /usr/local/bin/zsh
 
 - name: Check if iterm2 config is differ
   shell: |
