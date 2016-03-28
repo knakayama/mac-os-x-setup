@@ -32,3 +32,4 @@ pip_packages:
   - { name: boto3 }
   - { name: watchdog }
   - { name: s4cmd }
+  - { name: neovim }
