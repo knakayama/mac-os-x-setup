@@ -33,27 +33,6 @@
   with_items:
     - "{{ symlinks }}"
 
-- name: Copy local.knakayama.compresstmuxlog.plist
-  become: yes
-  template:
-    src: Library/LaunchAgents/local.knakayama.compresstmuxlog.plist.j2
-    dest: "{{ ansible_user_dir }}/Library/LaunchAgents/local.compresstmuxlog.plist"
-    owner: root
-    group: staff
-    mode: 0644
-  notify:
-    - Setup launchd for compressing tmux logs
-
-- name: Check if compressing tmux log launchd exists
-  shell: |
-    launchctl list
-  register: launchctl_result
-  always_run: true
-  failed_when: false
-  changed_when: launchctl_result.stdout.find('compresstmuxlog') == -1
-  notify:
-    - Setup launchd for compressing tmux logs
-
 - name: Install ricty fonts
   shell: |
     cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_id }}/Library/Fonts"
