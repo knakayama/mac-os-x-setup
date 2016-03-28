@@ -1,17 +1,12 @@
 ---
-- name: Check if /usr/local owners
-  stat:
-    path: /usr/local
-  register: res
-  always_run: true
-  failed_when: false
-  changed_when: res.stat.pw_name != '{{ ansible_user_id }}'
-
-- name: Change /usr/local owners
+- name: Change /usr/local owner to "{{ ansible_user_id }}"
   become: true
-  shell: |
-    chown -R {{ ansible_user_id }}:admin /usr/local
-  when: res|changed
+  file:
+    dest: /usr/local
+    owner: "{{ ansible_user_id }}"
+    group: admin
+    recurse: yes
+  when: not "{{ lookup('pipe', 'ls -ld /usr/local') | search('ansible_user_id')}}"
 
 - name: Install homebrew
   shell: |
