@@ -25,6 +25,8 @@ symlinks:
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain", dest: /usr/local/bin/aws-keychain }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain-completion.zsh", dest: "{{ zsh_completion_dir }}/_aws-keychain-completion" }
   - { src: "{{ ghq_root }}/dropbox/dbxcli/contrib/zsh-completion/_dbxcli", dest: "{{ zsh_completion_dir }}/_dbxcli" }
+  - { src: "{{ ansible_user_dir }}/.vim", dest: "{{ ansible_user_dir }}/.config/nvim/vim" }
+  - { src: "{{ ansible_user_dir }}/.vimrc", dest: "{{ ansible_user_dir }}/.config/nvim/init.vim" }
 
 setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
