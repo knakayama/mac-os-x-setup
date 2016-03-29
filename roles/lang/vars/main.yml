@@ -17,6 +17,7 @@ go_packages:
 
 npm_packages:
   - { name: http-console }
+  - { name: serverless }
 
 pip_packages:
   - { name: flake8 }
