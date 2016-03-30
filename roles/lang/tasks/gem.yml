@@ -1,4 +1,10 @@
 ---
+- name: Install Ruby via rbenv
+  shell: |
+    bash -cl 'rbenv install "{{ ruby_version }}"'
+  args:
+    creates: "~/.rbenv/versions/{{ ruby_version }}/bin/ruby"
+
 - name: Install gem pacakges
   gem:
     name: "{{ item.name }}"
