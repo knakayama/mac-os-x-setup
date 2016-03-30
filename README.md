@@ -95,6 +95,7 @@ $ ansible-playbook site.yml -vvvv --ask-become-pass
 4. Control+J to KANA/EISUU (toggle)
 5. Swap semicolon to colon
 6. Sands (another version)
+7. Control+] to Escape
 ```
 
 * Change clock date format
