@@ -34,6 +34,12 @@ osx_defaults:
     value: true
     notify: "Restart Finder"
 
+  - domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
   - domain: NSGlobalDomain
     key: InitialKeyRepeat
     type: int
