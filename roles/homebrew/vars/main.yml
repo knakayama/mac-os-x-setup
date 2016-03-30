@@ -11,6 +11,27 @@ homebrew_taps:
   - { tap: caarlos0/antibody }
   - { tap: caius/jo }
 
+homebrew_cask_packages:
+  - { name: avast }
+  - { name: iterm2 }
+  - { name: firefox }
+  - { name: google-japanese-ime }
+  - { name: java }
+  - { name: karabiner }
+  - { name: vagrant }
+  - { name: virtualbox }
+  - { name: kindle }
+  - { name: xquartz }
+  - { name: alfred }
+  - { name: gimp }
+  - { name: terraform }
+  - { name: packer }
+  - { name: consul }
+  - { name: vault }
+  - { name: dockertoolbox }
+  - { name: macvim }
+  - { name: slack }
+
 homebrew_packages:
   - { name: brew-cask }
   - { name: ghq, install_options: completions }
@@ -77,24 +98,4 @@ homebrew_packages:
   - { name: unar }
   - { name: awscli }
   - { name: jo }
-
-homebrew_cask_packages:
-  - { name: avast }
-  - { name: iterm2 }
-  - { name: firefox }
-  - { name: google-japanese-ime }
-  - { name: java }
-  - { name: karabiner }
-  - { name: vagrant }
-  - { name: virtualbox }
-  - { name: kindle }
-  - { name: xquartz }
-  - { name: alfred }
-  - { name: gimp }
-  - { name: terraform }
-  - { name: packer }
-  - { name: consul }
-  - { name: vault }
-  - { name: dockertoolbox }
-  - { name: macvim }
-  - { name: slack }
+  - { name: redpen }
