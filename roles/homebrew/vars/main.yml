@@ -48,7 +48,6 @@ homebrew_packages:
   - { name: sha2 }
   - { name: xz }
   - { name: lua }
-  - { name: vim, install_options: with-lua }
   - { name: neovim/neovim/neovim }
   - { name: rsense }
   - { name: pyenv }
@@ -78,7 +77,6 @@ homebrew_packages:
   - { name: unar }
   - { name: awscli }
   - { name: jo }
-  - { name: redpen }
 
 homebrew_cask_packages:
   - { name: avast }

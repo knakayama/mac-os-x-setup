@@ -1,8 +1,11 @@
 ---
 - name: Change login shell to /usr/local/bin/zsh
+  become: yes
+  become_method: sudo
   user:
     name: "{{ ansible_user_id }}"
     shell: /usr/local/bin/zsh
+    state: present
 
 - name: Check if iterm2 config is differ
   shell: |
@@ -16,6 +19,14 @@
   changed_when: diff_result.rc != 0
   notify:
     - Restore iterm2 configuration
+
+- name: Create Karabiner conf dir
+  file:
+    dest: "{{ ansible_user_dir }}/Library/Application Support/Karabiner"
+    owner: "{{ ansible_user_id }}"
+    group: staff
+    mode: 0755
+    state: directory
 
 - name: Copy Karabiner private.xml
   file:
@@ -35,6 +46,6 @@
 
 - name: Install ricty fonts
   shell: |
-    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_id }}/Library/Fonts" && fc-cache -vf
+    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_dir }}/Library/Fonts" && fc-cache -vf
   args:
     creates: "{{ ansible_user_id }}/Library/Fonts/Ricty-Bold.ttf"
