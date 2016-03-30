@@ -62,8 +62,8 @@ $ pyenv install <python-version>
 $ pyenv global <python-version>
 $ pyenv virtualenv general-env
 $ pyenv activate general-env
-$ pip install -r requirements.txt
 $ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
+$ pip install -r requirements.txt
 $ ansible-playbook site.yml -vvvv --ask-become-pass
 ```
 
