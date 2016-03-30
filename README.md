@@ -6,7 +6,8 @@ Mac OS X Setup
 * Update system
 
 ```bash
-sudo softwareupdate --install --recommended
+$ sudo softwareupdate --install --recommended
+$ sudo shutdown -r now
 ```
 
 * Tweak caps-lock key to performe ctl key
@@ -26,6 +27,7 @@ sudo softwareupdate --install --recommended
 3. Turn display off after 15m
 4. Open Display
 5. Max Brightness
+6. Dismiss keyboard brightness
 ```
 
 * Install Xcode
@@ -49,14 +51,20 @@ $ git clone https://github.com/knakayama/mac-os-x-setup ~/.ghq/github.com/knakay
 * Run [Ansible](https://github.com/ansible/ansible)
 
 ```bash
-$ brew install pyenv pyenv-virtualenv
+$ brew install pyenv pyenv-virtualenv gcc
+$ cat >>~/.bash_profile <<EOT
+export PYENV_ROOT="$HOME/.pyenv"'
+export PATH="$PYENV_ROOT/bin:$PATH"'
+echo 'eval "$(pyenv init -)"'
+EOT
+$ exec $SHELL
 $ pyenv install <python-version>
 $ pyenv global <python-version>
 $ pyenv virtualenv general-env
 $ pyenv activate general-env
-$ pip install ansible
-$ cd ~/.ghq/github.com/knakaya/mac-os-x-setup
-$ ansible-playbook -i ./bin/hosts.py site.yml -vv
+$ pip install -r requirements.txt
+$ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
+$ ansible-playbook site.yml -vvvv --ask-become-pass
 ```
 
 * add japanese input method
@@ -70,20 +78,15 @@ $ ansible-playbook -i ./bin/hosts.py site.yml -vv
 
 * Use firefox sync
 
-* Tweak avast
-
-```text
-1. open avast
-2. enable file system shiled and web shiled
-```
-
 * Add startup app
 
 ```text
 1. Open System Preferences
 1. Open User & Groups
-1. Add firefox and iterm2
+1. Add firefox/iterm2/slack
 ```
+
+* Change icon
 
 * Enable ssh login (Optional)
 
