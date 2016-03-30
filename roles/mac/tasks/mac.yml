@@ -49,3 +49,15 @@
     cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_dir }}/Library/Fonts" && fc-cache -vf
   args:
     creates: "{{ ansible_user_dir }}/Library/Fonts/Ricty-Bold.ttf"
+
+- name: Setup OS X defaults
+  osx_defaults:
+    domain: "{{ item.domain }}"
+    key: "{{ item.key }}"
+    type: "{{ item.type }}"
+    value: "{{ item.value }}"
+    state: present
+  notify:
+    - "{{ item.notify | default(omit) }}"
+  with_items:
+    - "{{ osx_defaults }}"
