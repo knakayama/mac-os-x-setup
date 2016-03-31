@@ -22,7 +22,7 @@
 
 - name: Create Karabiner conf dir
   file:
-    dest: "{{ ansible_user_dir }}/Library/Application Support/Karabiner"
+    dest: ~/Library/Application Support/Karabiner
     owner: "{{ ansible_user_id }}"
     group: staff
     mode: 0755
@@ -30,8 +30,8 @@
 
 - name: Copy Karabiner private.xml
   file:
-    src: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/mac-os-x-setup/roles/mac/files/Library/Application\ Support/Karabiner/private.xml"
-    dest: "{{ ansible_user_dir }}/Library/Application\ Support/Karabiner/private.xml"
+    src: Library/Application\ Support/Karabiner/private.xml
+    dest: ~/Library/Application\ Support/Karabiner/private.xml
     state: link
   notify:
     - Setup Karabiner
