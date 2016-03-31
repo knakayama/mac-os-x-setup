@@ -34,3 +34,6 @@ pip_packages:
   - { name: watchdog }
   - { name: s4cmd }
   - { name: neovim }
+
+pip3_packages:
+  - { name: neovim }

@@ -1,0 +1,8 @@
+---
+- name: install python packages via pip3
+  pip:
+    name: "{{ item.name }}"
+    state: "{{ item.state | default('latest') }}"
+    executable: /usr/local/bin/pip3
+  with_items:
+    - "{{ pip3_packages }}"
