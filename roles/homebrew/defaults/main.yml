@@ -86,7 +86,7 @@ homebrew_packages:
   - { name: mobile-shell }
   - { name: xhyve }
   - { name: ricty }
-  - { name: mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
+  - { name: kevwil/patches/mutt, install_options: "with-sidebar-patch, with-confirm-attachement-patch, with-trash-patch" }
   - { name: npm }
   - { name: fpp }
   - { name: bash }
