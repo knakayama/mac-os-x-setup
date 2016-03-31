@@ -52,10 +52,10 @@ $ git clone https://github.com/knakayama/mac-os-x-setup ~/.ghq/github.com/knakay
 
 ```bash
 $ brew install pyenv pyenv-virtualenv gcc
-$ cat >>~/.bash_profile <<EOT
-export PYENV_ROOT="$HOME/.pyenv"'
-export PATH="$PYENV_ROOT/bin:$PATH"'
-echo 'eval "$(pyenv init -)"'
+$ cat >>~/.bash_profile <<'EOT'
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 EOT
 $ exec $SHELL
 $ pyenv install <python-version>
