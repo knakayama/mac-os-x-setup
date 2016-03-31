@@ -35,7 +35,7 @@
 - name: Install homebrew packages
   homebrew:
     name: "{{ item.name }}"
-    state: "{{ item.state | default('latest') }}"
     install_options: "{{ item.install_options | default(omit) }}"
+    state: "{{ item.state | default('latest') }}"
   with_items:
     - "{{ homebrew_packages }}"

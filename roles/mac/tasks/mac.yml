@@ -9,7 +9,7 @@
 
 - name: Check if iterm2 config is differ
   shell: |
-    diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q "{{ ansible_user_dir }}/Library/Preferences/com.googlecode.iterm2.plist")
+    diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q ~/Library/Preferences/com.googlecode.iterm2.plist)
   args:
     chdir: roles/mac/files/Library/Preferences
     executable: /bin/bash
@@ -22,16 +22,16 @@
 
 - name: Create Karabiner conf dir
   file:
-    dest: ~/Library/Application Support/Karabiner
+    dest: "~/Library/Application Support/Karabiner"
     owner: "{{ ansible_user_id }}"
     group: staff
     mode: 0755
     state: directory
 
-- name: Copy Karabiner private.xml
+- name: Symlink Karabiner private.xml
   file:
-    src: Library/Application\ Support/Karabiner/private.xml
-    dest: ~/Library/Application\ Support/Karabiner/private.xml
+    src: "~/.ghq/github.com/knakayama/mac-os-x-setup/roles/mac/files/Library/Application Support/Karabiner/private.xml"
+    dest: "~/Library/Application Support/Karabiner/private.xml"
     state: link
   notify:
     - Setup Karabiner
@@ -60,7 +60,7 @@
 
 - name: Install ricty fonts
   shell: |
-    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf "{{ ansible_user_dir }}/Library/Fonts" && fc-cache -vf
+    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts && fc-cache -vf
   args:
     creates: "{{ ansible_user_dir }}/Library/Fonts/Ricty-Bold.ttf"
 
