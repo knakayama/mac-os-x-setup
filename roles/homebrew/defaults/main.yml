@@ -12,7 +12,6 @@ homebrew_taps:
   - { tap: caius/jo }
 
 homebrew_cask_packages:
-  - { name: avast }
   - { name: iterm2 }
   - { name: firefox }
   - { name: google-japanese-ime }
