@@ -1,12 +1,4 @@
 ---
-- name: Change login shell to /usr/local/bin/zsh
-  become: yes
-  become_method: sudo
-  user:
-    name: "{{ ansible_user_id }}"
-    shell: /usr/local/bin/zsh
-    state: present
-
 - name: Check if iterm2 config is differ
   shell: |
     diff <(plutil -convert binary1 -o - ./com.googlecode.iterm2.plist | md5 -q) <(md5 -q ~/Library/Preferences/com.googlecode.iterm2.plist)
