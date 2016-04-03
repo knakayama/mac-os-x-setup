@@ -4,6 +4,7 @@ gem_packages:
   - { name: terminal-table }
   - { name: bundler }
   - { name: pry }
+  - { name: terraforming }
 
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
