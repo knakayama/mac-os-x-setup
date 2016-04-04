@@ -13,6 +13,7 @@ git_repositories:
   - { repo: "https://github.com/hashicorp/consul.git", dest: "{{ ghq_root }}/hashicorp/consul" }
   - { repo: "https://github.com/pda/aws-keychain.git", dest: "{{ ghq_root }}/pda/aws-keychain" }
   - { repo: "https://github.com/dropbox/dbxcli.git", dest: "{{ ghq_root }}/dropbox/dbxcli" }
+  - { repo: "https://github.com/dtan4/terraforming.git", dest: "{{ ghq_root }}/dtan4/terraforming" }
 
 symlinks:
   - { src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh", dest: /usr/local/bin/pwd.sh }
@@ -26,6 +27,7 @@ symlinks:
   - { src: "{{ ghq_root }}/dropbox/dbxcli/contrib/zsh-completion/_dbxcli", dest: "{{ zsh_completion_dir }}/_dbxcli" }
   - { src: "{{ ansible_user_dir }}/.vim", dest: "{{ ansible_user_dir }}/.config/nvim/vim" }
   - { src: "{{ ansible_user_dir }}/.vimrc", dest: "{{ ansible_user_dir }}/.config/nvim/init.vim" }
+  - { src: "{{ ghq_root }}/dtan4/terraforming/contrib/zsh-completion/_terraforming", dest: "{{ zsh_completion_dir }}/_terraforming" }
 
 setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
