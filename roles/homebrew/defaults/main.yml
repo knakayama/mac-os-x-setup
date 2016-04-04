@@ -10,6 +10,7 @@ homebrew_taps:
   - { tap: bfontaine/utils }
   - { tap: caarlos0/antibody }
   - { tap: caius/jo }
+  - { tap: classmethod-aws/cm }
 
 homebrew_cask_packages:
   - { name: iterm2 }
@@ -98,3 +99,5 @@ homebrew_packages:
   - { name: awscli }
   - { name: jo }
   - { name: redpen }
+  - { name: aurl }
+  - { name: gnu-sed }
