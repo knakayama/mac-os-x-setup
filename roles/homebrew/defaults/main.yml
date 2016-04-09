@@ -101,3 +101,5 @@ homebrew_packages:
   - { name: redpen }
   - { name: aurl }
   - { name: gnu-sed }
+  - { name: gifsicle }
+  - { name: ffmpeg }
