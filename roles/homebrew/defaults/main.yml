@@ -102,3 +102,4 @@ homebrew_packages:
   - { name: gnu-sed }
   - { name: gifsicle }
   - { name: ffmpeg }
+  - { name: dynamodb-local }
