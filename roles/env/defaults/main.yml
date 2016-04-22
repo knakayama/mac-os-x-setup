@@ -15,6 +15,7 @@ git_repositories:
   - { repo: "https://github.com/dropbox/dbxcli.git", dest: "{{ ghq_root }}/dropbox/dbxcli" }
   - { repo: "https://github.com/dtan4/terraforming.git", dest: "{{ ghq_root }}/dtan4/terraforming" }
   - { repo: "https://github.com/knakayama/my-fuc.git", dest: "{{ ghq_root }}/knakayama/my-fuc" }
+  - { repo: "https://gist.github.com/002e3f5af837df385776.git", dest: "{{ ghq_root }}/knakayama/_apex" }
 
 symlinks:
   - { src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh", dest: /usr/local/bin/pwd.sh }
@@ -26,6 +27,7 @@ symlinks:
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain", dest: /usr/local/bin/aws-keychain }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain-completion.zsh", dest: "{{ zsh_completion_dir }}/_aws-keychain-completion" }
   - { src: "{{ ghq_root }}/dropbox/dbxcli/contrib/zsh-completion/_dbxcli", dest: "{{ zsh_completion_dir }}/_dbxcli" }
+  - { src: "{{ ghq_root }}/knakayama/_apex/_apex", dest: "{{ zsh_completion_dir }}/_apex" }
   - { src: "{{ ansible_user_dir }}/.vim", dest: "{{ ansible_user_dir }}/.config/nvim/vim" }
   - { src: "{{ ansible_user_dir }}/.vimrc", dest: "{{ ansible_user_dir }}/.config/nvim/init.vim" }
   - { src: "{{ ghq_root }}/dtan4/terraforming/contrib/zsh-completion/_terraforming", dest: "{{ zsh_completion_dir }}/_terraforming" }
