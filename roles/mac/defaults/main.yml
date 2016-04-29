@@ -40,6 +40,12 @@ osx_defaults:
     value: true
     notify: "Restart Finder"
 
+  - domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true
+    notify: "Restart Finder"
+
   - domain: NSGlobalDomain
     key: InitialKeyRepeat
     type: int
