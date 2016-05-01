@@ -37,6 +37,7 @@ pip_packages:
   - { name: watchdog }
   - { name: s4cmd }
   - { name: neovim }
+  - { name: cookiecutter }
 
 pip3_packages:
   - { name: neovim }
