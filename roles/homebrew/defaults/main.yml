@@ -31,6 +31,7 @@ homebrew_cask_packages:
   - { name: dockertoolbox }
   - { name: macvim }
   - { name: slack }
+  - { name: mactex }
 
 homebrew_packages:
   - { name: brew-cask }
