@@ -14,7 +14,6 @@ go_packages:
   - { name: gotty, path: github.com/yudai/gotty }
   - { name: ghs, path: github.com/sona-tar/ghs }
   - { name: ghdump, path: github.com/knakayama/ghdump }
-  - { name: assh, path: github.com/moul/advanced-ssh-config/cmd/assh }
   - { name: phony, path: github.com/yields/phony }
 
 npm_packages:
