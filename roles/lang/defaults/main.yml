@@ -37,6 +37,7 @@ pip_packages:
   - { name: s4cmd }
   - { name: neovim }
   - { name: cookiecutter }
+  - { name: awslogs }
 
 pip3_packages:
   - { name: neovim }
