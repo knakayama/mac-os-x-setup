@@ -32,6 +32,7 @@ homebrew_cask_packages:
   - { name: macvim }
   - { name: slack }
   - { name: mactex }
+  - { name: skype }
 
 homebrew_packages:
   - { name: brew-cask }
