@@ -38,6 +38,7 @@ pip_packages:
   - { name: neovim }
   - { name: cookiecutter }
   - { name: awslogs }
+  - { name: chalice }
 
 pip3_packages:
   - { name: neovim }
