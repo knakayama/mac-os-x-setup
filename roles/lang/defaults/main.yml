@@ -16,6 +16,7 @@ go_packages:
   - { name: ghdump, path: github.com/knakayama/ghdump }
   - { name: phony, path: github.com/yields/phony }
   - { name: s3gof3r, path: github.com/rlmcpherson/s3gof3r }
+  - { name: apex-shell, path: github.com/apex/apex-shell }
 
 npm_packages:
   - { name: http-console }
