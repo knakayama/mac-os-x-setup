@@ -7,6 +7,12 @@ Mac OS X Setup
 
 ```bash
 $ sudo softwareupdate --install --recommended
+```
+
+* Change system language
+
+```bash
+$ sudo languagesetup
 $ sudo shutdown -r now
 ```
 
