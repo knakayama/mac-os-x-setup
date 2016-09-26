@@ -12,7 +12,6 @@ git_repositories:
   - { repo: "https://github.com/mitchellh/packer.git", dest: "{{ ghq_root }}/hashicorp/packer" }
   - { repo: "https://github.com/hashicorp/consul.git", dest: "{{ ghq_root }}/hashicorp/consul" }
   - { repo: "https://github.com/pda/aws-keychain.git", dest: "{{ ghq_root }}/pda/aws-keychain" }
-  - { repo: "https://github.com/dropbox/dbxcli.git", dest: "{{ ghq_root }}/dropbox/dbxcli" }
   - { repo: "https://github.com/dtan4/terraforming.git", dest: "{{ ghq_root }}/dtan4/terraforming" }
   - { repo: "https://github.com/knakayama/my-fuc.git", dest: "{{ ghq_root }}/knakayama/my-fuc" }
   - { repo: "https://gist.github.com/002e3f5af837df385776.git", dest: "{{ ghq_root }}/knakayama/_apex" }
@@ -27,7 +26,6 @@ symlinks:
   - { src: "{{ ghq_root }}/hashicorp/consul/contrib/zsh-completion/_consul", dest: "{{ zsh_completion_dir }}/_consul" }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain", dest: /usr/local/bin/aws-keychain }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain-completion.zsh", dest: "{{ zsh_completion_dir }}/_aws-keychain-completion" }
-  - { src: "{{ ghq_root }}/dropbox/dbxcli/contrib/zsh-completion/_dbxcli", dest: "{{ zsh_completion_dir }}/_dbxcli" }
   - { src: "{{ ghq_root }}/knakayama/_apex/_apex", dest: "{{ zsh_completion_dir }}/_apex" }
   - { src: "{{ ansible_user_dir }}/.vim", dest: "{{ ansible_user_dir }}/.config/nvim/vim" }
   - { src: "{{ ansible_user_dir }}/.vimrc", dest: "{{ ansible_user_dir }}/.config/nvim/init.vim" }
@@ -37,5 +35,3 @@ symlinks:
 setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
   - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/dotfiles", creates: "{{ ansible_user_dir }}/.vimrc" }
-
-dbxcli_url: "https://github.com/dropbox/dbxcli/releases/download"
