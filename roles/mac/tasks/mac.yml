@@ -12,22 +12,6 @@
   notify:
     - Restore iterm2 configuration
 
-- name: Create Karabiner conf dir
-  file:
-    dest: "~/Library/Application Support/Karabiner"
-    owner: "{{ ansible_user_id }}"
-    group: staff
-    mode: 0755
-    state: directory
-
-- name: Symlink Karabiner private.xml
-  file:
-    src: "~/.ghq/github.com/knakayama/mac-os-x-setup/roles/mac/files/Library/Application Support/Karabiner/private.xml"
-    dest: "~/Library/Application Support/Karabiner/private.xml"
-    state: link
-  notify:
-    - Setup Karabiner
-
 - name: Check if getmail plist should be created
   pause:
     prompt: "Copy getmail plist?(y/n)"

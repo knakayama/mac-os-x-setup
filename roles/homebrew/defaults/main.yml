@@ -17,7 +17,7 @@ homebrew_cask_packages:
   - { name: firefox }
   - { name: google-japanese-ime }
   - { name: java }
-  - { name: karabiner }
+  - { name: karabiner-elements }
   - { name: vagrant }
   - { name: virtualbox }
   - { name: kindle }

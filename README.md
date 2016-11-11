@@ -92,18 +92,6 @@ $ ansible-playbook site.yml -vvvv --ask-become-pass
 1. Add firefox/iterm2/slack
 ```
 
-* Load new karabiner config
-
-```text
-1. Lock screen by command-L
-2. ESC to IME off (to English) + Esc + Esc
-3. Control + BRACKET_LEFT to IME off (to Enblish) + Esc + Esc
-4. Control+J to KANA/EISUU (toggle)
-5. Swap semicolon to colon
-6. Sands (another version)
-7. Control+] to Escape
-```
-
 * Change clock date format
 
 * Automatically hide tool bar
