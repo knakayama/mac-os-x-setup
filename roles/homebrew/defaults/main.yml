@@ -24,14 +24,11 @@ homebrew_cask_packages:
   - { name: xquartz }
   - { name: alfred }
   - { name: gimp }
-  - { name: terraform }
   - { name: packer }
   - { name: consul }
   - { name: vault }
-  - { name: dockertoolbox }
   - { name: macvim }
   - { name: slack }
-  - { name: mactex }
   - { name: skype }
 
 homebrew_packages:
@@ -105,3 +102,4 @@ homebrew_packages:
   - { name: gifsicle }
   - { name: ffmpeg }
   - { name: dynamodb-local }
+  - { name: terraform }
