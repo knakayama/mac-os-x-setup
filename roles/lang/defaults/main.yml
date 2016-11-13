@@ -1,25 +1,17 @@
 ---
 gem_packages:
   - { name: rubocop }
-  - { name: terminal-table }
   - { name: bundler }
   - { name: pry }
   - { name: terraforming }
 
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
-  - { name: gommit-m, path: github.com/yuroyoro/gommit-m }
-  - { name: gore, path: github.com/motemen/gore }
-  - { name: getool, path: github.com/garyburd/go-explorer/src/getool }
   - { name: gotty, path: github.com/yudai/gotty }
-  - { name: ghs, path: github.com/sona-tar/ghs }
   - { name: ghdump, path: github.com/knakayama/ghdump }
-  - { name: phony, path: github.com/yields/phony }
-  - { name: s3gof3r, path: github.com/rlmcpherson/s3gof3r }
   - { name: apex-shell, path: github.com/apex/apex-shell }
 
 npm_packages:
-  - { name: http-console }
   - { name: serverless }
 
 pip_packages:
@@ -27,18 +19,11 @@ pip_packages:
   - { name: ipython }
   - { name: ansible }
   - { name: ansible_lint }
-  - { name: ansible_shell }
-  - { name: sphinx }
-  - { name: blockdiag }
-  - { name: nwdiag }
   - { name: awscli }
   - { name: awsebcli }
   - { name: aws-shell }
   - { name: boto3 }
-  - { name: watchdog }
-  - { name: s4cmd }
   - { name: neovim }
-  - { name: cookiecutter }
   - { name: awslogs }
   - { name: chalice }
 
