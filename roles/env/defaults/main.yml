@@ -16,6 +16,7 @@ git_repositories:
   - { repo: "https://github.com/knakayama/my-fuc.git", dest: "{{ ghq_root }}/knakayama/my-fuc" }
   - { repo: "https://gist.github.com/002e3f5af837df385776.git", dest: "{{ ghq_root }}/knakayama/_apex" }
   - { repo: "https://github.com/bchew/dynamodump.git", dest: "{{ ghq_root }}/bchew/dynamodump" }
+  - { repo: "https;//github.com/aws/aws-cli.git", dest: "{{ ghq_root }}/aws/aws-cli" }
 
 symlinks:
   - { src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh", dest: /usr/local/bin/pwd.sh }
