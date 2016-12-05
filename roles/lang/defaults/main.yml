@@ -4,6 +4,7 @@ gem_packages:
   - { name: bundler }
   - { name: pry }
   - { name: terraforming }
+  - { name: statelint }
 
 go_packages:
   - { name: httpdoc, path: github.com/bfontaine/httpdoc }
