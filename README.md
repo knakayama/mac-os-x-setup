@@ -51,7 +51,7 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 * Clone [my mac os x setup repository](https://github.com/knakayama/mac-os-x-setup)
 
 ```bash
-$ git clone https://github.com/knakayama/mac-os-x-setup ~/.ghq/github.com/knakayama/mac-os-x-setup
+$ git clone https://github.com/knakayama/mac-os-x-setup ~/ghq/github.com/knakayama/mac-os-x-setup
 ```
 
 * Run [Ansible](https://github.com/ansible/ansible)
@@ -68,7 +68,7 @@ $ pyenv install <python-version>
 $ pyenv global <python-version>
 $ pyenv virtualenv general-env
 $ pyenv activate general-env
-$ cd ~/.ghq/github.com/knakayama/mac-os-x-setup
+$ cd ~/ghq/github.com/knakayama/mac-os-x-setup
 $ pip install -r requirements.txt
 $ ansible-playbook site.yml -vvvv --ask-become-pass
 ```

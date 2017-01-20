@@ -895,7 +895,7 @@
       </dict>
     </dict>
     <key>PrefsCustomFolder</key>
-    <string>/Users/knakayama/.ghq/github.com/knakayama/mac-os-x-setup</string>
+    <string>/Users/knakayama/ghq/github.com/knakayama/mac-os-x-setup</string>
     <key>PromptOnQuit</key>
     <true/>
     <key>QuitWhenAllWindowsClosed</key>

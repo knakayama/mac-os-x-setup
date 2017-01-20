@@ -1,5 +1,5 @@
 ---
-ghq_root: "{{ ansible_user_dir }}/.ghq/github.com"
+ghq_root: "{{ ansible_user_dir }}/ghq/github.com"
 zsh_completion_dir: "{{ ansible_user_dir }}/.zsh/completions"
 
 git_repositories:
@@ -34,5 +34,5 @@ symlinks:
   - { src: "{{ ghq_root }}/bchew/dynamodump/dynamodump.py", dest: /usr/local/bin/dynamodump.py }
 
 setup_repositories:
-  - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
-  - { chdir: "{{ ansible_user_dir }}/.ghq/github.com/knakayama/dotfiles", creates: "{{ ansible_user_dir }}/.vimrc" }
+  - { chdir: "{{ ansible_user_dir }}/ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
+  - { chdir: "{{ ansible_user_dir }}/ghq/github.com/knakayama/dotfiles", creates: "{{ ansible_user_dir }}/.vimrc" }
