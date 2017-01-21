@@ -6,7 +6,6 @@ git_repositories:
   - { repo: "https://github.com/knakayama/credentials.git", dest: "{{ ghq_root }}/knakayama/credentials" }
   - { repo: "https://github.com/knakayama/dotfiles.git", dest: "{{ ghq_root }}/knakayama/dotfiles" }
   - { repo: "https://github.com/tmux-plugins/tpm.git", dest: "{{ ansible_user_dir }}/.tmux/plugins/tpm" }
-  - { repo: "https://github.com/drduh/pwd.sh.git", dest: "{{ ghq_root }}/drduh/pwd.sh" }
   - { repo: "https://github.com/awslabs/git-secrets.git", dest: "{{ ghq_root }}/awslabs/git-secrets" }
   - { repo: "https://github.com/hashicorp/terraform.git", dest: "{{ ghq_root }}/hashicorp/terraform" }
   - { repo: "https://github.com/mitchellh/packer.git", dest: "{{ ghq_root }}/hashicorp/packer" }
@@ -14,12 +13,10 @@ git_repositories:
   - { repo: "https://github.com/pda/aws-keychain.git", dest: "{{ ghq_root }}/pda/aws-keychain" }
   - { repo: "https://github.com/dtan4/terraforming.git", dest: "{{ ghq_root }}/dtan4/terraforming" }
   - { repo: "https://github.com/knakayama/my-fuc.git", dest: "{{ ghq_root }}/knakayama/my-fuc" }
-  - { repo: "https://gist.github.com/002e3f5af837df385776.git", dest: "{{ ghq_root }}/knakayama/_apex" }
   - { repo: "https://github.com/bchew/dynamodump.git", dest: "{{ ghq_root }}/bchew/dynamodump" }
   - { repo: "https://github.com/aws/aws-cli.git", dest: "{{ ghq_root }}/aws/aws-cli" }
 
 symlinks:
-  - { src: "{{ ghq_root }}/drduh/pwd.sh/pwd.sh", dest: /usr/local/bin/pwd.sh }
   - { src: "{{ ghq_root }}/awslabs/git-secrets/git-secrets", dest: /usr/local/bin/git-secrets }
   - { src: "{{ ghq_root }}/awslabs/git-secrets/git-secrets.1", dest: /usr/local/share/man/man1/git-secrets.1 }
   - { src: "{{ ghq_root }}/hashicorp/terraform/contrib/zsh-completion/_terraform", dest: "{{ zsh_completion_dir }}/_terraform" }
@@ -27,7 +24,6 @@ symlinks:
   - { src: "{{ ghq_root }}/hashicorp/consul/contrib/zsh-completion/_consul", dest: "{{ zsh_completion_dir }}/_consul" }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain", dest: /usr/local/bin/aws-keychain }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain-completion.zsh", dest: "{{ zsh_completion_dir }}/_aws-keychain-completion" }
-  - { src: "{{ ghq_root }}/knakayama/_apex/_apex", dest: "{{ zsh_completion_dir }}/_apex" }
   - { src: "{{ ansible_user_dir }}/.vim", dest: "{{ ansible_user_dir }}/.config/nvim/vim" }
   - { src: "{{ ansible_user_dir }}/.vimrc", dest: "{{ ansible_user_dir }}/.config/nvim/init.vim" }
   - { src: "{{ ghq_root }}/dtan4/terraforming/contrib/zsh-completion/_terraforming", dest: "{{ zsh_completion_dir }}/_terraforming" }
