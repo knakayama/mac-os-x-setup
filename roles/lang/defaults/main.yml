@@ -13,7 +13,7 @@ go_packages:
   - { name: apex-shell, path: github.com/apex/apex-shell }
 
 npm_packages:
-  - { name: serverless }
+  - { name: eslint }
 
 pip_packages:
   - { name: flake8 }
