@@ -26,6 +26,7 @@ pip_packages:
   - { name: boto3 }
   - { name: neovim }
   - { name: awslogs }
+  - { name: cfn_flip }
 
 pip3_packages:
   - { name: neovim }
