@@ -15,6 +15,6 @@
   tags:
     - pip3
 
-- include: npm.yml
-  tags:
-    - npm
+#- include: npm.yml
+#  tags:
+#    - npm
