@@ -103,3 +103,4 @@ homebrew_packages:
   - { name: packer }
   - { name: consul }
   - { name: vault }
+  - { name: yarn }
