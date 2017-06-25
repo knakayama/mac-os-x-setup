@@ -104,3 +104,5 @@ homebrew_packages:
   - { name: consul }
   - { name: vault }
   - { name: yarn }
+  - { name: docker-compose }
+  - { name: docker-compose-completion }
