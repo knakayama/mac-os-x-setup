@@ -106,5 +106,4 @@ homebrew_packages:
   - { name: vault }
   - { name: yarn }
   - { name: docker-completion }
-  - { name: docker-compose }
   - { name: docker-compose-completion }
