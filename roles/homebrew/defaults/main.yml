@@ -107,3 +107,4 @@ homebrew_packages:
   - { name: yarn }
   - { name: docker-completion }
   - { name: docker-compose-completion }
+  - { name: amazon-ecs-cli }
