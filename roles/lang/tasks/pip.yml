@@ -1,9 +1,0 @@
----
-- name: Install python packages via pip
-  pip:
-    name: "{{ item.name }}"
-    state: "{{ item.state | default('latest') }}"
-  with_items:
-    - "{{ pip_packages }}"
-  notify:
-    - Rehash pyenv

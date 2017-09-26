@@ -15,7 +15,8 @@ go_packages:
 npm_packages:
   - { name: eslint }
 
-pip_packages:
+pip3_packages:
+  - { name: neovim }
   - { name: flake8 }
   - { name: ipython }
   - { name: ansible }
@@ -23,10 +24,6 @@ pip_packages:
   - { name: awscli }
   - { name: awsebcli }
   - { name: aws-shell }
-  - { name: boto3 }
-  - { name: neovim }
   - { name: awslogs }
   - { name: cfn_flip }
-
-pip3_packages:
-  - { name: neovim }
+  - { name: pipenv }
