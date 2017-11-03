@@ -13,7 +13,6 @@ homebrew_taps:
 
 homebrew_cask_packages:
   - { name: iterm2 }
-  - { name: firefox }
   - { name: google-japanese-ime }
   - { name: java }
   - { name: karabiner-elements }
@@ -62,7 +61,6 @@ homebrew_packages:
   - { name: sha2 }
   - { name: xz }
   - { name: lua }
-  - { name: neovim/neovim/neovim }
   - { name: rsense }
   - { name: pyenv }
   - { name: pyenv-virtualenv }
@@ -73,7 +71,6 @@ homebrew_packages:
   - { name: mobile-shell }
   - { name: xhyve }
   - { name: ricty }
-  - { name: fpp }
   - { name: bash }
   - { name: antibody }
   - { name: freetype }
@@ -82,7 +79,6 @@ homebrew_packages:
   - { name: unar }
   - { name: jo }
   - { name: gnu-sed }
-  - { name: gifsicle }
   - { name: terraform }
   - { name: packer }
   - { name: consul }
