@@ -10,7 +10,6 @@ homebrew_taps:
   - { tap: bfontaine/utils }
   - { tap: caarlos0/antibody }
   - { tap: caius/jo }
-  - { tap: classmethod/repos }
 
 homebrew_cask_packages:
   - { name: iterm2 }
