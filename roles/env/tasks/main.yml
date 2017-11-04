@@ -1,2 +1,2 @@
 ---
-- include: env.yml
+- import_tasks: env.yml

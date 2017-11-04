@@ -1,2 +1,2 @@
 ---
-- include: homebrew.yml
+- import_tasks: homebrew.yml

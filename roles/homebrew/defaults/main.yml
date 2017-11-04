@@ -1,13 +1,6 @@
 ---
 homebrew_taps:
   - { tap: caskroom/cask }
-  - { tap: homebrew/binary }
-  - { tap: homebrew/dupes }
-  - { tap: caskroom/fonts }
-  - { tap: caskroom/versions }
-  - { tap: sanemat/font }
-  - { tap: kevwil/patches }
-  - { tap: bfontaine/utils }
   - { tap: caarlos0/antibody }
   - { tap: caius/jo }
 
@@ -26,12 +19,10 @@ homebrew_cask_packages:
   - { name: docker }
 
 homebrew_packages:
-  - { name: brew-cask }
   - { name: ghq, install_options: completions }
   - { name: pcre }
   - { name: libxml2 }
   - { name: glib }
-  - { name: fontconfig }
   - { name: readline }
   - { name: openssl }
   - { name: python }
@@ -61,20 +52,11 @@ homebrew_packages:
   - { name: sha2 }
   - { name: xz }
   - { name: lua }
-  - { name: rsense }
-  - { name: pyenv }
-  - { name: pyenv-virtualenv }
-  - { name: plenv }
-  - { name: perl-build }
   - { name: urlview }
   - { name: rfc }
-  - { name: mobile-shell }
-  - { name: xhyve }
-  - { name: ricty }
   - { name: bash }
   - { name: antibody }
   - { name: freetype }
-  - { name: procmail }
   - { name: watch }
   - { name: unar }
   - { name: jo }

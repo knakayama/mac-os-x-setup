@@ -9,7 +9,7 @@
   shell: |
     bash -cl 'rbenv versions' | grep -F "* {{ ruby_version }}"
   register: res
-  always_run: yes
+  check_mode: no
   failed_when: no
   changed_when: res.rc != 0
   notify:

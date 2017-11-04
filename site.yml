@@ -1,2 +1,2 @@
 ---
-- include: localhost.yml
+- import_playbook: localhost.yml

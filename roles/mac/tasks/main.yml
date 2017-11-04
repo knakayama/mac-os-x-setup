@@ -1,2 +1,2 @@
 ---
-- include: mac.yml
+- import_tasks: mac.yml

@@ -1,20 +1,16 @@
 ---
-- include: gem.yml
+- import_tasks: gem.yml
   tags:
     - gem
 
-- include: go.yml
+- import_tasks: go.yml
   tags:
     - go
 
-- include: pip.yml
-  tags:
-    - pip
-
-- include: pip3.yml
+- import_tasks: pip3.yml
   tags:
     - pip3
 
-#- include: npm.yml
-#  tags:
-#    - npm
+- import_tasks: npm.yml
+  tags:
+    - npm

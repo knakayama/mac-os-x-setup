@@ -14,17 +14,6 @@
 
 - name: Check if getmail plist should be created
   pause:
-    prompt: "Copy getmail plist?(y/n)"
-  register: yn
-
-- name: Copy getmail plist
-  template:
-    src: Library/LaunchAgents/local.knakayama.getnewmail.plist.j2
-    dest: ~/Library/Preferences/local.knakayama.getnewmail.plist
-    owner: "{{ ansible_user_id }}"
-    group: staff
-    mode: 0600
-  when: yn.user_input == "y"
 
 - name: Create alias symlink
   file:
@@ -33,12 +22,6 @@
     state: link
   with_items:
     - "{{ symlinks }}"
-
-- name: Install ricty fonts
-  shell: |
-    cp -f $(brew --cellar ricty)/*/share/fonts/Ricty*.ttf ~/Library/Fonts && fc-cache -vf
-  args:
-    creates: "{{ ansible_user_dir }}/Library/Fonts/Ricty-Bold.ttf"
 
 - name: Setup OS X defaults
   osx_defaults:

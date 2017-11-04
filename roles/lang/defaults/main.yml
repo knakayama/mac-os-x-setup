@@ -1,29 +1,17 @@
 ---
 gem_packages:
-  - { name: rubocop }
   - { name: bundler }
   - { name: pry }
   - { name: terraforming }
   - { name: statelint }
 
 go_packages:
-  - { name: httpdoc, path: github.com/bfontaine/httpdoc }
-  - { name: gotty, path: github.com/yudai/gotty }
   - { name: ghdump, path: github.com/knakayama/ghdump }
-  - { name: apex-shell, path: github.com/apex/apex-shell }
 
 npm_packages:
-  - { name: eslint }
+  - { name: aws-sam-local }
 
 pip3_packages:
-  - { name: neovim }
-  - { name: flake8 }
-  - { name: ipython }
-  - { name: ansible }
-  - { name: ansible_lint }
   - { name: awscli }
-  - { name: awsebcli }
-  - { name: aws-shell }
-  - { name: awslogs }
+  - { name: ipython }
   - { name: cfn_flip }
-  - { name: pipenv }
