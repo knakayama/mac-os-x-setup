@@ -17,6 +17,7 @@ homebrew_cask_packages:
   - { name: slack }
   - { name: skype }
   - { name: docker }
+  - { name: atom }
 
 homebrew_packages:
   - { name: ghq, install_options: completions }
