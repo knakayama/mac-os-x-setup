@@ -1,8 +1,6 @@
 ---
 homebrew_taps:
   - { tap: caskroom/cask }
-  - { tap: caarlos0/antibody }
-  - { tap: caius/jo }
 
 homebrew_cask_packages:
   - { name: iterm2 }
@@ -13,7 +11,6 @@ homebrew_cask_packages:
   - { name: xquartz }
   - { name: alfred }
   - { name: gimp }
-  - { name: macvim }
   - { name: slack }
   - { name: skype }
   - { name: docker }
@@ -56,12 +53,13 @@ homebrew_packages:
   - { name: urlview }
   - { name: rfc }
   - { name: bash }
-  - { name: antibody }
+  - { name: getantibody/tap/antibody }
   - { name: freetype }
   - { name: watch }
   - { name: unar }
   - { name: jo }
   - { name: gnu-sed }
+  - { name: gnu-time }
   - { name: terraform }
   - { name: packer }
   - { name: consul }
