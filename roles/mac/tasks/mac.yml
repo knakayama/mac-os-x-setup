@@ -12,9 +12,6 @@
   notify:
     - Restore iterm2 configuration
 
-- name: Check if getmail plist should be created
-  pause:
-
 - name: Create alias symlink
   file:
     src: "{{ item.src }}"
