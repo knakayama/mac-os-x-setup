@@ -13,7 +13,6 @@ git_repositories:
   - { repo: "https://github.com/pda/aws-keychain.git", dest: "{{ ghq_root }}/pda/aws-keychain" }
   - { repo: "https://github.com/dtan4/terraforming.git", dest: "{{ ghq_root }}/dtan4/terraforming" }
   - { repo: "https://github.com/knakayama/my-fuc.git", dest: "{{ ghq_root }}/knakayama/my-fuc" }
-  - { repo: "https://github.com/bchew/dynamodump.git", dest: "{{ ghq_root }}/bchew/dynamodump" }
   - { repo: "https://github.com/aws/aws-cli.git", dest: "{{ ghq_root }}/aws/aws-cli" }
 
 symlinks:
@@ -25,7 +24,6 @@ symlinks:
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain", dest: /usr/local/bin/aws-keychain }
   - { src: "{{ ghq_root }}/pda/aws-keychain/aws-keychain-completion.zsh", dest: "{{ zsh_completion_dir }}/_aws-keychain-completion" }
   - { src: "{{ ghq_root }}/dtan4/terraforming/contrib/zsh-completion/_terraforming", dest: "{{ zsh_completion_dir }}/_terraforming" }
-  - { src: "{{ ghq_root }}/bchew/dynamodump/dynamodump.py", dest: /usr/local/bin/dynamodump.py }
 
 setup_repositories:
   - { chdir: "{{ ansible_user_dir }}/ghq/github.com/knakayama/credentials", creates: "{{ ansible_user_dir }}/.msmtprc" }
