@@ -45,13 +45,3 @@ osx_defaults:
     type: bool
     value: true
     notify: "Restart Finder"
-
-  - domain: NSGlobalDomain
-    key: InitialKeyRepeat
-    type: int
-    value: 15
-
-  - domain: NSGlobalDomain
-    key: KeyRepeat
-    type: int
-    value: 2
