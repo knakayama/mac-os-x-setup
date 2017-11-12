@@ -66,3 +66,4 @@ homebrew_packages:
   - { name: vault }
   - { name: docker-completion }
   - { name: docker-compose-completion }
+  - { name: shellcheck }
