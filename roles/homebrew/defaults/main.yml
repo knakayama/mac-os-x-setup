@@ -67,3 +67,4 @@ homebrew_packages:
   - { name: docker-completion }
   - { name: docker-compose-completion }
   - { name: shellcheck }
+  - { name: grep }
