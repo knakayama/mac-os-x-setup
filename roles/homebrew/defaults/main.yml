@@ -15,6 +15,7 @@ homebrew_cask_packages:
   - { name: skype }
   - { name: docker }
   - { name: atom }
+  - { name: anaconda }
 
 homebrew_packages:
   - { name: ghq, install_options: completions }
