@@ -70,3 +70,4 @@ homebrew_packages:
   - { name: shellcheck }
   - { name: grep }
   - { name: graphviz }
+  - { name: plantuml }
