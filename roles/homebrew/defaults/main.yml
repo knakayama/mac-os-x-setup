@@ -69,3 +69,4 @@ homebrew_packages:
   - { name: docker-compose-completion }
   - { name: shellcheck }
   - { name: grep }
+  - { name: graphviz }
