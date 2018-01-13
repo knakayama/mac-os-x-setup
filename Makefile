@@ -1,7 +1,6 @@
 SHELL = /usr/bin/env bash -xeuo pipefail
 
 GIT_DIR := $$HOME/ghq/github.com/knakayama/mac-os-x-setup
-TAG =
 
 setup-base:
 	@xcode-select --install
