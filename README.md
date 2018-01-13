@@ -1,22 +1,22 @@
 Mac OS X Setup
 ==============
 
-* Buy [Mac OS X](http://www.apple.com/jp/mac/) with US keyboard
+- Buy [Mac OS X](http://www.apple.com/jp/mac/) with US keyboard
 
-* Update system
+- Update system
 
 ```bash
 $ sudo softwareupdate --install --recommended
 ```
 
-* Change system language
+- Change system language
 
 ```bash
 $ sudo languagesetup
 $ sudo shutdown -r now
 ```
 
-* Tweak Display
+- Tweak Display
 
 ```text
 1. Open System Preferences
@@ -27,20 +27,22 @@ $ sudo shutdown -r now
 6. Dismiss keyboard brightness
 ```
 
-* Run Makefile
+- Run Makefile
 
 ```bash
 $ make setup-base setup-python
 ```
 
-* Run [Ansible](https://github.com/ansible/ansible)
+- Download credentials
+
+- Run [Ansible](https://github.com/ansible/ansible)
 
 ```bash
 $ cd ~/ghq/github.com/knakayama/mac-os-x-setup
 $ ansible-playbook site.yml -vvvv --ask-become-pass
 ```
 
-* add japanese input method
+- add japanese input method
 
 ```text
 1. open System Preferences
@@ -49,7 +51,7 @@ $ ansible-playbook site.yml -vvvv --ask-become-pass
 4. add japanese
 ```
 
-* Add startup app
+- Add startup app
 
 ```text
 1. Open System Preferences
@@ -57,6 +59,6 @@ $ ansible-playbook site.yml -vvvv --ask-become-pass
 1. Add Chrome/iterm2/slack
 ```
 
-* Change clock date format
+- Change clock date format
 
-* Automatically hide tool bar
+- Automatically hide tool bar
