@@ -24,7 +24,7 @@ homebrew_packages:
   - { name: glib }
   - { name: readline }
   - { name: openssl }
-  - { name: python@2 }
+  - { name: python2 }
   - { name: python3 }
   - { name: coreutils }
   - { name: git }
