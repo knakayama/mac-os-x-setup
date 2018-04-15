@@ -14,7 +14,7 @@ homebrew_cask_packages:
   - { name: slack }
   - { name: skype }
   - { name: docker }
-  - { name: atom }
+  - { name: visual-code-studio }
   - { name: anaconda }
 
 homebrew_packages:
